@@ -19,19 +19,28 @@
     "eyebrow": "Servicios",
     "title": "Todo lo que tu look necesita",
     "description": "Cortes, barba y afeitados pensados para cada estilo.",
+    "priceNote": "* Precios de referencia, sujetos a confirmación con el barbero.",
     "items": [
-      { "name": "Corte de pelo", "description": "Corte a tijera o máquina, adaptado a tu estilo." },
-      { "name": "Corte + Barba", "description": "El combo completo: corte y arreglo de barba en una sola cita." },
-      { "name": "Arreglo de barba", "description": "Perfilado y diseño de barba con acabado profesional." },
-      { "name": "Afeitado clásico", "description": "Afeitado tradicional a navaja, con toalla caliente." },
-      { "name": "Corte niño", "description": "Cortes para los más pequeños de la casa." },
-      { "name": "Coloración", "description": "Color y matización para pelo y barba." }
+      { "name": "Corte de pelo", "description": "Corte a tijera o máquina, adaptado a tu estilo.", "price": "18€*" },
+      { "name": "Corte + Barba", "description": "El combo completo: corte y arreglo de barba en una sola cita.", "price": "28€*" },
+      { "name": "Arreglo de barba", "description": "Perfilado y diseño de barba con acabado profesional.", "price": "12€*" },
+      { "name": "Afeitado clásico", "description": "Afeitado tradicional a navaja, con toalla caliente.", "price": "20€*" },
+      { "name": "Corte niño", "description": "Cortes para los más pequeños de la casa.", "price": "14€*" },
+      { "name": "Coloración", "description": "Color y matización para pelo y barba.", "price": "35€*" }
     ]
   },
   "gallery": {
     "eyebrow": "Galería",
     "title": "Nuestro trabajo",
     "description": "Algunas de nuestras últimas realizaciones."
+  },
+  "stripeBand": {
+    "items": ["FADES DE PRECISIÓN", "AFEITADO CLÁSICO", "DISEÑO DE BARBA"]
+  },
+  "historia": {
+    "eyebrow": "Nuestra historia",
+    "title": "Mauricio, el barbero",
+    "paragraph": "Mauricio lleva más de una década detrás de la silla, especializado en cortes clásicos y afeitado a navaja. Abrió Mauri Barber para ofrecer un trato cercano y un oficio cuidado al detalle, sin prisas y sin florituras."
   },
   "reviews": {
     "eyebrow": "Reseñas",

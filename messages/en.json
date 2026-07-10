@@ -19,19 +19,28 @@
     "eyebrow": "Services",
     "title": "Everything your look needs",
     "description": "Haircuts, beard grooming and shaves for every style.",
+    "priceNote": "* Reference prices, subject to confirmation with the barber.",
     "items": [
-      { "name": "Haircut", "description": "Scissor or clipper cut, tailored to your style." },
-      { "name": "Haircut + Beard", "description": "The full combo: haircut and beard grooming in one visit." },
-      { "name": "Beard grooming", "description": "Beard shaping and trimming with a professional finish." },
-      { "name": "Classic shave", "description": "Traditional razor shave with hot towel." },
-      { "name": "Kids haircut", "description": "Haircuts for the little ones." },
-      { "name": "Coloring", "description": "Color and toning for hair and beard." }
+      { "name": "Haircut", "description": "Scissor or clipper cut, tailored to your style.", "price": "€18*" },
+      { "name": "Haircut + Beard", "description": "The full combo: haircut and beard grooming in one visit.", "price": "€28*" },
+      { "name": "Beard grooming", "description": "Beard shaping and trimming with a professional finish.", "price": "€12*" },
+      { "name": "Classic shave", "description": "Traditional razor shave with hot towel.", "price": "€20*" },
+      { "name": "Kids haircut", "description": "Haircuts for the little ones.", "price": "€14*" },
+      { "name": "Coloring", "description": "Color and toning for hair and beard.", "price": "€35*" }
     ]
   },
   "gallery": {
     "eyebrow": "Gallery",
     "title": "Our work",
     "description": "A look at some of our recent work."
+  },
+  "stripeBand": {
+    "items": ["PRECISION FADES", "CLASSIC SHAVES", "BEARD DESIGN"]
+  },
+  "historia": {
+    "eyebrow": "Our story",
+    "title": "Mauricio, the barber",
+    "paragraph": "Mauricio has spent over a decade behind the chair, specializing in classic cuts and traditional razor shaves. He opened Mauri Barber to offer close, unhurried service and a craft built on attention to detail."
   },
   "reviews": {
     "eyebrow": "Reviews",
