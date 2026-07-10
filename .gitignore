@@ -42,3 +42,6 @@ next-env.d.ts
 
 # git worktrees (parent repo)
 .worktrees/
+
+# brainstorming visual companion
+.superpowers/
