@@ -12,7 +12,7 @@ export default function StripeBand({ stripeBand }: StripeBandProps) {
 
   return (
     <div
-      className="overflow-hidden py-1.5"
+      className="animate-barber-pole overflow-hidden py-1.5"
       style={{
         backgroundImage:
           "repeating-linear-gradient(-45deg, var(--color-ink) 0 22px, var(--color-gold-dark) 22px 24px, var(--color-paper) 24px 26px, var(--color-gold) 26px 28px, var(--color-ink) 28px 50px)",

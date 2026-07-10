@@ -29,8 +29,22 @@ body {
   animation: stripe-scroll 26s linear infinite;
 }
 
+@keyframes barber-pole-scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -70px -70px;
+  }
+}
+
+.animate-barber-pole {
+  animation: barber-pole-scroll 4s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-stripe-scroll {
+  .animate-stripe-scroll,
+  .animate-barber-pole {
     animation-play-state: paused;
   }
 }
