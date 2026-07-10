@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
+import StripeBand from "@/components/StripeBand/StripeBand";
 import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
+import Historia from "@/components/Historia/Historia";
 import Reviews from "@/components/Reviews/Reviews";
 import ContactHours from "@/components/ContactHours/ContactHours";
 import Footer from "@/components/Footer/Footer";
@@ -103,8 +105,10 @@ export default async function LocaleHomePage({ params }: Props) {
       <Navbar locale={locale} navbar={dict.navbar} whatsappMessage={dict.whatsapp.message} />
       <main>
         <Hero hero={dict.hero} whatsappMessage={dict.whatsapp.message} />
+        <StripeBand stripeBand={dict.stripeBand} />
         <Services services={dict.services} />
         <Gallery gallery={dict.gallery} />
+        <Historia historia={dict.historia} />
         <Reviews reviews={dict.reviews} />
         <ContactHours contact={dict.contact} whatsappMessage={dict.whatsapp.message} />
       </main>
