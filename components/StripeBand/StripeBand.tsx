@@ -9,20 +9,20 @@ export default function StripeBand({ stripeBand }: StripeBandProps) {
 
   return (
     <div
-      className="overflow-hidden py-3"
+      className="overflow-hidden py-1.5"
       style={{
         backgroundImage:
-          "repeating-linear-gradient(-45deg, var(--color-ink) 0 42px, var(--color-gold-dark) 42px 46px, var(--color-paper) 46px 50px, var(--color-gold) 50px 54px, var(--color-ink) 54px 96px)",
+          "repeating-linear-gradient(-45deg, var(--color-ink) 0 22px, var(--color-gold-dark) 22px 24px, var(--color-paper) 24px 26px, var(--color-gold) 26px 28px, var(--color-ink) 28px 50px)",
       }}
     >
       <div
         aria-hidden="true"
-        className="animate-stripe-scroll inline-flex whitespace-nowrap bg-ink py-2"
+        className="animate-stripe-scroll inline-flex whitespace-nowrap bg-ink py-1"
       >
         {loopItems.map((item, index) => (
-          <span key={`${item}-${index}`} className="font-display mx-8 text-xl tracking-wide text-paper">
+          <span key={`${item}-${index}`} className="font-display mx-4 text-sm tracking-wide text-paper">
             {item}
-            <span className="mx-8 text-gold">·</span>
+            <span className="mx-4 text-gold">·</span>
           </span>
         ))}
       </div>
