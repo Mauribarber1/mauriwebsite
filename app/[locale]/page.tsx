@@ -46,6 +46,7 @@ function buildLocalBusinessJsonLd(locale: Locale) {
     image: `${BASE_URL}/images/hero.jpg`,
     telephone: "+34664301664",
     email: "mauribcn@gmail.com",
+    // TODO: placeholder tier, no real pricing from the client yet — update once known
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
@@ -54,6 +55,7 @@ function buildLocalBusinessJsonLd(locale: Locale) {
       postalCode: "08005",
       addressCountry: "ES",
     },
+    // TODO: approximate coords reused from Reviews.tsx's Maps link — verify against a real geocode
     geo: {
       "@type": "GeoCoordinates",
       latitude: 41.4036,
