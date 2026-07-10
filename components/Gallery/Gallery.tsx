@@ -11,7 +11,6 @@ const IMAGES = [
   "/images/gallery-3.jpg",
   "/images/gallery-4.jpg",
   "/images/gallery-5.jpg",
-  "/images/gallery-6.jpg",
 ];
 
 export default function Gallery({ gallery }: GalleryProps) {
@@ -32,11 +31,7 @@ export default function Gallery({ gallery }: GalleryProps) {
             <div
               key={src}
               className={`relative overflow-hidden rounded-xl ${
-                index === 0
-                  ? "col-span-2 md:row-span-2"
-                  : index === 4
-                    ? "col-span-2"
-                    : ""
+                index === 0 ? "col-span-2 md:row-span-2" : ""
               }`}
             >
               <Image

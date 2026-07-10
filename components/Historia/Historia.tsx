@@ -9,15 +9,6 @@ export default function Historia({ historia }: HistoriaProps) {
   return (
     <section className="border-t-2 border-gold-dark bg-ink py-24 text-paper">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-2 md:items-center">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-          <Image
-            src="/images/historia.jpg"
-            alt=""
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-          />
-        </div>
         <div>
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">
             {historia.eyebrow}
@@ -26,6 +17,15 @@ export default function Historia({ historia }: HistoriaProps) {
             {historia.title}
           </h2>
           <p className="mt-6 max-w-xl text-paper/80">{historia.paragraph}</p>
+        </div>
+        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+          <Image
+            src="/images/historia.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
