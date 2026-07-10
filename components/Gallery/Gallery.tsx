@@ -27,7 +27,7 @@ export default function Gallery({ gallery }: GalleryProps) {
           </h2>
           <p className="mt-4 text-paper/70">{gallery.description}</p>
         </div>
-        <div className="mt-12 grid grid-cols-2 auto-rows-[160px] gap-4 sm:auto-rows-[200px] md:grid-cols-4 md:auto-rows-[220px]">
+        <div className="mt-12 grid grid-flow-dense grid-cols-2 auto-rows-[160px] gap-4 sm:auto-rows-[200px] md:grid-cols-4 md:auto-rows-[220px]">
           {IMAGES.map((src, index) => (
             <div
               key={src}
