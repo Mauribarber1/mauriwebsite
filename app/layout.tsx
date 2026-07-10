@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Work_Sans, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-worksans",
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-playfair",
+  weight: "400",
+  variable: "--font-bebas",
   display: "swap",
 });
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="es" className={`${workSans.variable} ${bebasNeue.variable}`}>
       <body>{children}</body>
     </html>
   );

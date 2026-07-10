@@ -7,11 +7,24 @@
   --color-gold-soft: rgba(201, 162, 39, 0.12);
   --color-gold-dark: #7a6019;
 
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-worksans), system-ui, sans-serif;
+  --font-display: var(--font-bebas), Georgia, sans-serif;
 }
 
 body {
   background-color: var(--color-paper);
   color: var(--color-ink);
+}
+
+@keyframes stripe-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-stripe-scroll {
+  animation: stripe-scroll 26s linear infinite;
 }
