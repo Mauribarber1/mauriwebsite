@@ -1,7 +1,5 @@
 import { notFound } from "next/navigation";
-import type { Locale } from "@/lib/dictionaries";
-
-const LOCALES: Locale[] = ["es", "en"];
+import { LOCALES, type Locale } from "@/lib/dictionaries";
 
 type Props = {
   children: React.ReactNode;
