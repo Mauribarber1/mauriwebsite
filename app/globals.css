@@ -28,3 +28,9 @@ body {
 .animate-stripe-scroll {
   animation: stripe-scroll 26s linear infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-stripe-scroll {
+    animation-play-state: paused;
+  }
+}
