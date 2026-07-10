@@ -1197,46 +1197,60 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HairSalon",
-  name: "Mauri Barber",
-  image: `${BASE_URL}/images/hero.jpg`,
-  telephone: "+34664301664",
-  email: "mauribcn@gmail.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Carrer de Bilbao 38",
-    addressLocality: "Barcelona",
-    postalCode: "08005",
-    addressCountry: "ES",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "10:00",
-      closes: "14:30",
+function buildLocalBusinessJsonLd(locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    name: "Mauri Barber",
+    url: `${BASE_URL}/${locale}`,
+    image: `${BASE_URL}/images/hero.jpg`,
+    telephone: "+34664301664",
+    email: "mauribcn@gmail.com",
+    priceRange: "€€",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Carrer de Bilbao 38",
+      addressLocality: "Barcelona",
+      postalCode: "08005",
+      addressCountry: "ES",
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "15:30",
-      closes: "20:00",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 41.4036,
+      longitude: 2.1955,
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
-  sameAs: ["https://www.instagram.com/maurilima71"],
-};
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
+        closes: "14:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "15:30",
+        closes: "20:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
+    sameAs: ["https://www.instagram.com/maurilima71"],
+  };
+}
+
+export function generateStaticParams() {
+  return [{ locale: "es" }, { locale: "en" }];
+}
 
 export default async function LocaleHomePage({ params }: Props) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const localBusinessJsonLd = buildLocalBusinessJsonLd(locale);
 
   return (
     <>
@@ -1258,6 +1272,8 @@ export default async function LocaleHomePage({ params }: Props) {
   );
 }
 ```
+
+Note: `latitude`/`longitude` (41.4036, 2.1955) are approximate coordinates for the Sant Martí neighborhood of Barcelona, matching the coordinates already used in the Google Maps link in `components/Reviews/Reviews.tsx` for consistency — adjust to the exact address pin once available. `priceRange: "€€"` is a coarse placeholder (mid-range) since the client hasn't provided pricing — update once real prices/tiers are known. `generateStaticParams` makes the route statically prerendered for both locales at build time instead of rendered on demand — safe here since there are only ever two fixed locales and all content is static.
 
 - [ ] **Step 2: Typecheck the whole project**
 
