@@ -1,0 +1,70 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "gallery": "Galería",
+    "reviews": "Reseñas",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "eyebrow": "Barbería en Barcelona",
+    "title": "Estilo clásico,",
+    "titleHighlight": "actitud moderna",
+    "description": "En Mauri Barber cuidamos cada detalle de tu corte y tu barba, en el corazón de Barcelona. Reserva tu cita por WhatsApp y ven a probarlo.",
+    "ctaPrimary": "Reservar por WhatsApp",
+    "ctaSecondary": "Ver servicios"
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Todo lo que tu look necesita",
+    "description": "Cortes, barba y afeitados pensados para cada estilo.",
+    "items": [
+      { "name": "Corte de pelo", "description": "Corte a tijera o máquina, adaptado a tu estilo." },
+      { "name": "Corte + Barba", "description": "El combo completo: corte y arreglo de barba en una sola cita." },
+      { "name": "Arreglo de barba", "description": "Perfilado y diseño de barba con acabado profesional." },
+      { "name": "Afeitado clásico", "description": "Afeitado tradicional a navaja, con toalla caliente." },
+      { "name": "Corte niño", "description": "Cortes para los más pequeños de la casa." },
+      { "name": "Coloración", "description": "Color y matización para pelo y barba." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "Nuestro trabajo",
+    "description": "Algunas de nuestras últimas realizaciones."
+  },
+  "reviews": {
+    "eyebrow": "Reseñas",
+    "title": "Lo que dicen nuestros clientes",
+    "googleLabel": "Reseñas de Google",
+    "ratingLabel": "5.0 sobre 5",
+    "viewAllLabel": "Ver en Google Maps",
+    "items": [
+      { "name": "Ronaldo", "text": "I've been getting my hair cut by Mauricio since his previous barbershop, and I'm glad he didn't move far. He's an excellent barber with great attention to detail." },
+      { "name": "Augusto De Chico", "text": "Muy bueno. Increíble peluquero." },
+      { "name": "Henrique Nascimento", "text": "Mauricio é excelente" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Ven a visitarnos",
+    "hoursTitle": "Horario",
+    "hours": [
+      { "days": "Lunes - Viernes", "hours": "10:00–14:30 y 15:30–20:00" },
+      { "days": "Sábado", "hours": "9:00–18:00" },
+      { "days": "Domingo", "hours": "Cerrado" }
+    ],
+    "addressLabel": "Dirección",
+    "address": "Carrer de Bilbao 38, 08005 Barcelona",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "ctaWhatsapp": "Escríbenos por WhatsApp"
+  },
+  "footer": {
+    "tagline": "Barbería en Barcelona.",
+    "rights": "Todos los derechos reservados."
+  },
+  "whatsapp": {
+    "message": "Hola, quiero reservar una cita"
+  }
+}

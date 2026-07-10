@@ -1,0 +1,70 @@
+{
+  "navbar": {
+    "services": "Services",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "eyebrow": "Barbershop in Barcelona",
+    "title": "Classic style,",
+    "titleHighlight": "modern attitude",
+    "description": "At Mauri Barber we take care of every detail of your haircut and beard, right in the heart of Barcelona. Book your appointment on WhatsApp and come try it out.",
+    "ctaPrimary": "Book on WhatsApp",
+    "ctaSecondary": "See services"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything your look needs",
+    "description": "Haircuts, beard grooming and shaves for every style.",
+    "items": [
+      { "name": "Haircut", "description": "Scissor or clipper cut, tailored to your style." },
+      { "name": "Haircut + Beard", "description": "The full combo: haircut and beard grooming in one visit." },
+      { "name": "Beard grooming", "description": "Beard shaping and trimming with a professional finish." },
+      { "name": "Classic shave", "description": "Traditional razor shave with hot towel." },
+      { "name": "Kids haircut", "description": "Haircuts for the little ones." },
+      { "name": "Coloring", "description": "Color and toning for hair and beard." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Our work",
+    "description": "A look at some of our recent work."
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What our clients say",
+    "googleLabel": "Google Reviews",
+    "ratingLabel": "5.0 out of 5",
+    "viewAllLabel": "View on Google Maps",
+    "items": [
+      { "name": "Ronaldo", "text": "I've been getting my hair cut by Mauricio since his previous barbershop, and I'm glad he didn't move far. He's an excellent barber with great attention to detail." },
+      { "name": "Augusto De Chico", "text": "Muy bueno. Increíble peluquero." },
+      { "name": "Henrique Nascimento", "text": "Mauricio é excelente" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Come visit us",
+    "hoursTitle": "Hours",
+    "hours": [
+      { "days": "Monday - Friday", "hours": "10:00–14:30 and 15:30–20:00" },
+      { "days": "Saturday", "hours": "9:00–18:00" },
+      { "days": "Sunday", "hours": "Closed" }
+    ],
+    "addressLabel": "Address",
+    "address": "Carrer de Bilbao 38, 08005 Barcelona",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "ctaWhatsapp": "Message us on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Barbershop in Barcelona.",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "message": "Hi, I'd like to book an appointment"
+  }
+}
