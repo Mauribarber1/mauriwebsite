@@ -7,7 +7,7 @@ type HistoriaProps = {
 
 export default function Historia({ historia }: HistoriaProps) {
   return (
-    <section className="bg-ink py-24 text-paper">
+    <section className="border-t-2 border-gold-dark bg-ink py-24 text-paper">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-2 md:items-center">
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
           <Image
