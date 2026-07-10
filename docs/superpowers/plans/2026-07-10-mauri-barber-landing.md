@@ -403,6 +403,8 @@ git add app/globals.css app/layout.tsx
 git commit -m "feat: add color and font design tokens"
 ```
 
+**Post-task addendum (accessibility fix, already applied):** a code review found `--color-gold` (`#c9a227`) has only ~2.3:1 contrast against `--color-paper` — below WCAG AA (4.5:1) for text. A `--color-gold-dark: #7a6019;` token was added to the `@theme` block (~5.7:1 against `--color-paper`) for any gold-colored *text* that sits on a light (`paper`/`gold-soft`) background. `--color-gold` remains correct for: gold text/highlights on the `ink` background (hero overlay, gallery, contact sections — ~8:1 contrast there), and non-text accents (borders, icons where strict text-contrast rules don't apply). Tasks 6, 7, 9, and 11 below already use `gold-dark` where needed — follow the code as written, don't substitute plain `gold` for text on light backgrounds.
+
 ---
 
 ### Task 4: Download placeholder images
@@ -537,11 +539,13 @@ export default function Logo({ className = "" }: LogoProps) {
     <span
       className={`font-serif text-xl font-semibold tracking-wide uppercase ${className}`}
     >
-      Mauri <span className="text-gold">Barber</span>
+      Mauri <span className="text-gold-dark">Barber</span>
     </span>
   );
 }
 ```
+
+`Logo` is always rendered on a light (`paper`) background in this design (navbar, footer), so it uses `gold-dark` rather than `gold` for accessible contrast — see the Task 3 addendum.
 
 This is a placeholder text wordmark — swap the contents for an `<Image>` once a real logo file exists, without changing any call site (`<Logo />` stays the same).
 
@@ -604,7 +608,7 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink/80 transition-colors hover:text-gold"
+              className="text-sm font-medium text-ink/80 transition-colors hover:text-gold-dark"
             >
               {link.label}
             </a>
@@ -613,7 +617,7 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
         <div className="flex items-center gap-4">
           <Link
             href={`/${otherLocale}`}
-            className="text-sm font-medium text-ink/60 transition-colors hover:text-gold"
+            className="text-sm font-medium text-ink/60 transition-colors hover:text-gold-dark"
           >
             {otherLabel}
           </Link>
@@ -733,7 +737,7 @@ export default function Services({ services }: ServicesProps) {
   return (
     <section id="services" className="mx-auto max-w-6xl px-6 py-24">
       <div className="max-w-2xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">
+        <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold-dark">
           {services.eyebrow}
         </p>
         <h2 className="font-serif text-3xl font-semibold sm:text-4xl">
@@ -871,7 +875,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
     <section id="reviews" className="mx-auto max-w-6xl px-6 py-24">
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
         <div className="max-w-2xl">
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">
+          <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold-dark">
             {reviews.eyebrow}
           </p>
           <h2 className="font-serif text-3xl font-semibold sm:text-4xl">
@@ -884,7 +888,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
           rel="noopener noreferrer"
           className="flex items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm font-medium transition-colors hover:border-gold"
         >
-          <span aria-hidden="true" className="text-gold">★★★★★</span>
+          <span aria-hidden="true" className="text-gold-dark">★★★★★</span>
           <span>{reviews.ratingLabel} · {reviews.googleLabel}</span>
         </a>
       </div>
@@ -894,7 +898,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
             key={review.name}
             className="rounded-2xl border border-black/5 bg-gold-soft/30 p-6"
           >
-            <p aria-hidden="true" className="text-gold">★★★★★</p>
+            <p aria-hidden="true" className="text-gold-dark">★★★★★</p>
             <p className="mt-3 text-sm text-ink/80">&ldquo;{review.text}&rdquo;</p>
             <footer className="mt-4 text-sm font-semibold">{review.name}</footer>
           </blockquote>
@@ -904,7 +908,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
         href={GOOGLE_MAPS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-8 inline-block text-sm font-medium text-gold hover:underline"
+        className="mt-8 inline-block text-sm font-medium text-gold-dark hover:underline"
       >
         {reviews.viewAllLabel}
       </a>
