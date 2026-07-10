@@ -22,14 +22,23 @@ export default function Gallery({ gallery }: GalleryProps) {
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">
             {gallery.eyebrow}
           </p>
-          <h2 className="font-serif text-3xl font-semibold sm:text-4xl">
+          <h2 className="font-display text-4xl uppercase tracking-wide sm:text-5xl">
             {gallery.title}
           </h2>
           <p className="mt-4 text-paper/70">{gallery.description}</p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
-          {IMAGES.map((src) => (
-            <div key={src} className="relative aspect-square overflow-hidden rounded-xl">
+        <div className="mt-12 grid grid-cols-2 auto-rows-[160px] gap-4 sm:auto-rows-[200px] md:grid-cols-4 md:auto-rows-[220px]">
+          {IMAGES.map((src, index) => (
+            <div
+              key={src}
+              className={`relative overflow-hidden rounded-xl ${
+                index === 0
+                  ? "col-span-2 md:row-span-2"
+                  : index === 4
+                    ? "col-span-2"
+                    : ""
+              }`}
+            >
               <Image
                 src={src}
                 alt=""

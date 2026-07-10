@@ -21,12 +21,12 @@ export default function ContactHours({ contact, whatsappMessage }: ContactHoursP
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">
           {contact.eyebrow}
         </p>
-        <h2 className="font-serif text-3xl font-semibold sm:text-4xl">{contact.title}</h2>
+        <h2 className="font-display text-4xl uppercase tracking-wide sm:text-5xl">{contact.title}</h2>
 
         <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div className="space-y-8">
             <div>
-              <h3 className="font-serif text-xl font-semibold text-gold">
+              <h3 className="font-display text-2xl text-gold">
                 {contact.hoursTitle}
               </h3>
               <ul className="mt-4 space-y-2 text-paper/85">

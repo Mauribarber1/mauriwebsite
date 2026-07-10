@@ -23,7 +23,7 @@ export default function Hero({ hero, whatsappMessage }: HeroProps) {
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-gold">
           {hero.eyebrow}
         </p>
-        <h1 className="max-w-2xl font-serif text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
+        <h1 className="max-w-2xl font-display text-5xl uppercase leading-[0.9] tracking-wide sm:text-6xl md:text-7xl">
           {hero.title}
           <br />
           <span className="text-gold">{hero.titleHighlight}</span>

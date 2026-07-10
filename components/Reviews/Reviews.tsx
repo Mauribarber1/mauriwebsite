@@ -15,7 +15,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold-dark">
             {reviews.eyebrow}
           </p>
-          <h2 className="font-serif text-3xl font-semibold sm:text-4xl">
+          <h2 className="font-display text-4xl uppercase tracking-wide sm:text-5xl">
             {reviews.title}
           </h2>
         </div>
