@@ -37,46 +37,60 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HairSalon",
-  name: "Mauri Barber",
-  image: `${BASE_URL}/images/hero.jpg`,
-  telephone: "+34664301664",
-  email: "mauribcn@gmail.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Carrer de Bilbao 38",
-    addressLocality: "Barcelona",
-    postalCode: "08005",
-    addressCountry: "ES",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "10:00",
-      closes: "14:30",
+function buildLocalBusinessJsonLd(locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    name: "Mauri Barber",
+    url: `${BASE_URL}/${locale}`,
+    image: `${BASE_URL}/images/hero.jpg`,
+    telephone: "+34664301664",
+    email: "mauribcn@gmail.com",
+    priceRange: "€€",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Carrer de Bilbao 38",
+      addressLocality: "Barcelona",
+      postalCode: "08005",
+      addressCountry: "ES",
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "15:30",
-      closes: "20:00",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 41.4036,
+      longitude: 2.1955,
     },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
-  sameAs: ["https://www.instagram.com/maurilima71"],
-};
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
+        closes: "14:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "15:30",
+        closes: "20:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
+    sameAs: ["https://www.instagram.com/maurilima71"],
+  };
+}
+
+export function generateStaticParams() {
+  return [{ locale: "es" }, { locale: "en" }];
+}
 
 export default async function LocaleHomePage({ params }: Props) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const localBusinessJsonLd = buildLocalBusinessJsonLd(locale);
 
   return (
     <>
