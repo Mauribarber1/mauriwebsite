@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import "server-only";
 import esMessages from "@/messages/es.json";
 
@@ -10,5 +11,9 @@ export type Locale = keyof typeof dictionaries;
 export type Messages = typeof esMessages;
 
 export async function getDictionary(locale: Locale): Promise<Messages> {
-  return dictionaries[locale]();
+  const loadDictionary = dictionaries[locale];
+  if (!loadDictionary) {
+    notFound();
+  }
+  return loadDictionary();
 }
