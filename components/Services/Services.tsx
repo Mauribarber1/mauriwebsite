@@ -25,7 +25,7 @@ export default function Services({ services }: ServicesProps) {
             <span className="font-display text-sm text-gold-dark">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <div>
+            <div className="min-w-0">
               <h3 className="font-display text-2xl">{item.name}</h3>
               <p className="mt-1 text-sm text-ink/60">{item.description}</p>
             </div>
