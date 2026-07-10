@@ -4,8 +4,11 @@ type StripeBandProps = {
   stripeBand: Messages["stripeBand"];
 };
 
+const REPEAT_COUNT = 6;
+
 export default function StripeBand({ stripeBand }: StripeBandProps) {
-  const loopItems = [...stripeBand.items, ...stripeBand.items];
+  const half = Array.from({ length: REPEAT_COUNT }, () => stripeBand.items).flat();
+  const loopItems = [...half, ...half];
 
   return (
     <div
