@@ -27,7 +27,7 @@ Site vitrine (landing page) pour un salon de barbier à Barcelone, client de l'a
 
 - Next.js (App Router) + TypeScript + React
 - Tailwind CSS v4
-- `next-intl` avec routing par locale : `/es` (par défaut) et `/en`, structure `app/[locale]/...`
+- Routing par locale `/es` (par défaut) et `/en`, structure `app/[locale]/...`, avec un système de dictionnaires JSON maison (`lib/dictionaries.ts` + `messages/{es,en}.json`) — pas de librairie i18n externe (`next-intl` etc.), pour rester cohérent avec le pattern déjà utilisé sur klentcreative et éviter une dépendance superflue
 - `next/image` pour l'optimisation des images
 - Contenu statique en dur dans `messages/es.json` et `messages/en.json` (pas de CMS/BDD)
 - Déploiement visé : Vercel
