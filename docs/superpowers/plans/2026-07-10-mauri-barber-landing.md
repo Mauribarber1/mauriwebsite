@@ -104,7 +104,8 @@ git commit -m "chore: scaffold Next.js project with create-next-app"
     "gallery": "Galería",
     "reviews": "Reseñas",
     "contact": "Contacto",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "menu": "Menú"
   },
   "hero": {
     "eyebrow": "Barbería en Barcelona",
@@ -180,7 +181,8 @@ git commit -m "chore: scaffold Next.js project with create-next-app"
     "gallery": "Gallery",
     "reviews": "Reviews",
     "contact": "Contact",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "menu": "Menu"
   },
   "hero": {
     "eyebrow": "Barbershop in Barcelona",
@@ -575,6 +577,9 @@ git commit -m "feat: add placeholder text logo component"
 
 `components/Navbar/Navbar.tsx`:
 ```typescript
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Logo from "@/components/Logo/Logo";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
@@ -587,6 +592,7 @@ type NavbarProps = {
 };
 
 export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const otherLocale: Locale = locale === "es" ? "en" : "es";
   const otherLabel = locale === "es" ? "EN" : "ES";
 
@@ -617,17 +623,55 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
         <div className="flex items-center gap-4">
           <Link
             href={`/${otherLocale}`}
-            className="text-sm font-medium text-ink/60 transition-colors hover:text-gold-dark"
+            className="hidden text-sm font-medium text-ink/60 transition-colors hover:text-gold-dark sm:inline"
           >
             {otherLabel}
           </Link>
           <WhatsAppButton message={whatsappMessage} label={navbar.whatsapp} />
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            aria-expanded={isMenuOpen}
+            aria-label={navbar.menu}
+            className="flex h-10 w-10 items-center justify-center rounded-full text-ink transition-colors hover:bg-gold-soft md:hidden"
+          >
+            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-none stroke-current stroke-2" aria-hidden="true">
+              {isMenuOpen ? (
+                <path strokeLinecap="round" d="M6 6l12 12M18 6L6 18" />
+              ) : (
+                <path strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
+      {isMenuOpen && (
+        <nav className="flex flex-col gap-1 border-t border-black/5 bg-paper px-6 py-4 md:hidden">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-gold-soft hover:text-gold-dark"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Link
+            href={`/${otherLocale}`}
+            onClick={() => setIsMenuOpen(false)}
+            className="rounded-lg px-3 py-2 text-sm font-medium text-ink/60 transition-colors hover:bg-gold-soft hover:text-gold-dark"
+          >
+            {otherLabel}
+          </Link>
+        </nav>
+      )}
     </header>
   );
 }
 ```
+
+Note: this is a Client Component (`"use client"`) because the mobile menu needs `useState` for open/close toggling. The `otherLocale` link is duplicated (once `hidden sm:inline` in the header bar, once in the mobile menu panel) — this is intentional, not a bug: the header-bar version is for tablet/desktop widths that don't get the hamburger, the mobile-menu version is for narrow widths, and they're both driven by CSS breakpoints, not JS.
 
 - [ ] **Step 2: Typecheck**
 
@@ -640,8 +684,8 @@ Expected: no output, exit code 0.
 - [ ] **Step 3: Commit**
 
 ```bash
-git add components/Navbar
-git commit -m "feat: add navbar with locale switch and WhatsApp CTA"
+git add components/Navbar messages
+git commit -m "feat: add navbar with locale switch, WhatsApp CTA and mobile menu"
 ```
 
 ---
