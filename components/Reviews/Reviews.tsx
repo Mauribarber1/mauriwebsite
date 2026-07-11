@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/Reveal";
 import type { Messages } from "@/lib/dictionaries";
 
 const GOOGLE_MAPS_URL =
@@ -30,15 +31,14 @@ export default function Reviews({ reviews }: ReviewsProps) {
         </a>
       </div>
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-        {reviews.items.map((review) => (
-          <blockquote
-            key={review.name}
-            className="rounded-2xl border border-black/5 bg-gold-soft/30 p-6"
-          >
-            <p aria-hidden="true" className="text-gold-dark">★★★★★</p>
-            <p className="mt-3 text-sm text-ink/80">&ldquo;{review.text}&rdquo;</p>
-            <footer className="mt-4 text-sm font-semibold">{review.name}</footer>
-          </blockquote>
+        {reviews.items.map((review, index) => (
+          <Reveal key={review.name} delay={index * 0.1} scale>
+            <blockquote className="h-full rounded-2xl border border-black/5 bg-gold-soft/30 p-6">
+              <p aria-hidden="true" className="text-gold-dark">★★★★★</p>
+              <p className="mt-3 text-sm text-ink/80">&ldquo;{review.text}&rdquo;</p>
+              <footer className="mt-4 text-sm font-semibold">{review.name}</footer>
+            </blockquote>
+          </Reveal>
         ))}
       </div>
       <a
