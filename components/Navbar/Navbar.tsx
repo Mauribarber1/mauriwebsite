@@ -35,7 +35,7 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ink/80 transition-colors hover:text-gold-dark"
+              className="relative text-sm font-medium text-ink/80 transition-colors after:absolute after:-bottom-1 after:left-1/2 after:h-px after:w-0 after:-translate-x-1/2 after:bg-gold after:transition-all after:duration-300 hover:text-gold-dark hover:after:w-full"
             >
               {link.label}
             </a>
