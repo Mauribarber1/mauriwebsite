@@ -23,7 +23,7 @@ export default function Services({ services }: ServicesProps) {
             <div className="group relative grid grid-cols-[2.5rem_1fr_auto] items-center gap-6 overflow-hidden border-b border-black/10 py-7 transition-colors duration-300 hover:bg-gold-soft">
               <span
                 aria-hidden="true"
-                className="font-display pointer-events-none absolute -left-2 top-1/2 -z-10 -translate-y-1/2 text-8xl text-ink/5 transition-colors duration-300 group-hover:text-gold-soft sm:text-9xl"
+                className="font-display pointer-events-none absolute -left-2 top-1/2 -z-10 -translate-y-1/2 text-8xl text-ink/5 transition-colors duration-300 group-hover:text-gold-dark sm:text-9xl"
               >
                 {String(index + 1).padStart(2, "0")}
               </span>
