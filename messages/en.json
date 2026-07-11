@@ -40,7 +40,9 @@
   "historia": {
     "eyebrow": "Our story",
     "title": "Mauricio, the barber",
-    "paragraph": "Mauricio has spent over a decade behind the chair, specializing in classic cuts and traditional razor shaves. He opened Mauri Barber to offer close, unhurried service and a craft built on attention to detail."
+    "paragraph": "Mauricio has spent over a decade behind the chair, specializing in classic cuts and traditional razor shaves. He opened Mauri Barber to offer close, unhurried service and a craft built on attention to detail.",
+    "statNumber": 10,
+    "statLabel": "years of craft"
   },
   "reviews": {
     "eyebrow": "Reviews",

@@ -40,7 +40,9 @@
   "historia": {
     "eyebrow": "Nuestra historia",
     "title": "Mauricio, el barbero",
-    "paragraph": "Mauricio lleva más de una década detrás de la silla, especializado en cortes clásicos y afeitado a navaja. Abrió Mauri Barber para ofrecer un trato cercano y un oficio cuidado al detalle, sin prisas y sin florituras."
+    "paragraph": "Mauricio lleva más de una década detrás de la silla, especializado en cortes clásicos y afeitado a navaja. Abrió Mauri Barber para ofrecer un trato cercano y un oficio cuidado al detalle, sin prisas y sin florituras.",
+    "statNumber": 10,
+    "statLabel": "años de oficio"
   },
   "reviews": {
     "eyebrow": "Reseñas",
