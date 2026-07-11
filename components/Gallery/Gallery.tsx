@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "@/components/motion/Reveal";
 import type { Messages } from "@/lib/dictionaries";
 
 type GalleryProps = {
@@ -28,20 +29,22 @@ export default function Gallery({ gallery }: GalleryProps) {
         </div>
         <div className="mt-12 grid grid-flow-dense grid-cols-2 auto-rows-[160px] gap-4 sm:auto-rows-[200px] md:grid-cols-4 md:auto-rows-[220px]">
           {IMAGES.map((src, index) => (
-            <div
+            <Reveal
               key={src}
-              className={`relative overflow-hidden rounded-xl ${
-                index === 0 ? "col-span-2 md:row-span-2" : ""
-              }`}
+              delay={index * 0.08}
+              scale
+              className={`relative overflow-hidden rounded-xl ${index === 0 ? "col-span-2 md:row-span-2" : ""}`}
             >
-              <Image
-                src={src}
-                alt=""
-                fill
-                sizes="(min-width: 768px) 33vw, 50vw"
-                className="object-cover transition-transform duration-300 hover:scale-105"
-              />
-            </div>
+              <div className="group relative h-full w-full overflow-hidden rounded-xl ring-1 ring-transparent transition-all duration-300 hover:ring-2 hover:ring-gold">
+                <Image
+                  src={src}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 33vw, 50vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </Reveal>
           ))}
         </div>
       </div>
