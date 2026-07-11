@@ -35,7 +35,7 @@ export default function Historia({ historia }: HistoriaProps) {
             aria-hidden="true"
             className="absolute -bottom-4 -right-4 hidden aspect-[4/5] w-full rounded-2xl border-2 border-gold md:block"
           />
-          <Reveal delay={0.05} className="relative aspect-[4/5] overflow-hidden rounded-2xl md:-ml-16">
+          <Reveal delay={0.05} className="relative aspect-[4/5] overflow-hidden rounded-2xl md:-ml-24">
             <ParallaxImage src="/images/historia.jpg" alt="" sizes="(min-width: 768px) 50vw, 100vw" strength={20} />
           </Reveal>
         </div>
