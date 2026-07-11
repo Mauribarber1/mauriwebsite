@@ -11,7 +11,7 @@ export default function Historia({ historia }: HistoriaProps) {
   return (
     <section className="border-t-2 border-gold-dark bg-paper py-24">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 px-6 md:grid-cols-[1fr_1.2fr] md:items-center">
-        <div className="md:pr-6">
+        <div className="md:pr-16">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold-dark">
             {historia.eyebrow}
           </p>
