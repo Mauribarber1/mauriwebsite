@@ -20,11 +20,11 @@ export default function Hero({ hero, whatsappMessage }: HeroProps) {
           </p>
         </Reveal>
         <h1 className="max-w-2xl font-display text-5xl uppercase leading-[0.9] tracking-wide sm:text-6xl md:text-7xl">
-          <Reveal delay={0.1}>
-            <span className="block">{hero.title}</span>
+          <Reveal as="span" delay={0.1} className="block">
+            {hero.title}
           </Reveal>
-          <Reveal delay={0.25}>
-            <span className="block text-gold">{hero.titleHighlight}</span>
+          <Reveal as="span" delay={0.25} className="block text-gold">
+            {hero.titleHighlight}
           </Reveal>
         </h1>
         <Reveal delay={0.4}>
@@ -41,13 +41,13 @@ export default function Hero({ hero, whatsappMessage }: HeroProps) {
             </a>
           </div>
         </Reveal>
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-8 left-1/2 hidden -translate-x-1/2 sm:block motion-reduce:hidden"
-        >
-          <div className="relative h-10 w-px bg-paper/20">
-            <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 animate-scroll-cue rounded-full bg-gold" />
-          </div>
+      </div>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-8 left-1/2 hidden -translate-x-1/2 sm:block motion-reduce:hidden"
+      >
+        <div className="relative h-10 w-px bg-paper/20">
+          <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 animate-scroll-cue rounded-full bg-gold" />
         </div>
       </div>
     </section>
