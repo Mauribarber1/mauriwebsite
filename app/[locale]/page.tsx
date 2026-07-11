@@ -9,6 +9,7 @@ import Reviews from "@/components/Reviews/Reviews";
 import ContactHours from "@/components/ContactHours/ContactHours";
 import Footer from "@/components/Footer/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
+import ScrollProgressBar from "@/components/motion/ScrollProgressBar";
 import { getDictionary, type Locale } from "@/lib/dictionaries";
 
 const BASE_URL = "https://www.mauribarber.com";
@@ -102,6 +103,7 @@ export default async function LocaleHomePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
+      <ScrollProgressBar />
       <Navbar locale={locale} navbar={dict.navbar} whatsappMessage={dict.whatsapp.message} />
       <main>
         <Hero hero={dict.hero} whatsappMessage={dict.whatsapp.message} />
