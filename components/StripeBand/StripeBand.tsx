@@ -11,25 +11,16 @@ export default function StripeBand({ stripeBand }: StripeBandProps) {
   const loopItems = [...half, ...half];
 
   return (
-    <div className="relative overflow-hidden py-2">
-      <div
-        className="animate-barber-pole absolute inset-0"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(-45deg, var(--color-ink) 0 17px, var(--color-gold-dark) 17px 18px, var(--color-gold) 18px 35px, var(--color-gold-dark) 35px 36px)",
-        }}
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(255,255,255,0.28), rgba(255,255,255,0) 40%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35))",
-        }}
-      />
+    <div
+      className="animate-barber-pole overflow-hidden py-1.5"
+      style={{
+        backgroundImage:
+          "repeating-linear-gradient(-45deg, var(--color-ink) 0 22px, var(--color-gold-dark) 22px 24px, var(--color-paper) 24px 26px, var(--color-gold) 26px 28px, var(--color-ink) 28px 50px)",
+      }}
+    >
       <div
         aria-hidden="true"
-        className="animate-stripe-scroll relative inline-flex whitespace-nowrap bg-ink py-1"
+        className="animate-stripe-scroll inline-flex whitespace-nowrap bg-ink py-1"
       >
         {loopItems.map((item, index) => (
           <span key={`${item}-${index}`} className="font-display mx-4 text-sm tracking-wide text-paper">

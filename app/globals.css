@@ -34,12 +34,12 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: -36px -36px;
+    background-position: -70px -70px;
   }
 }
 
 .animate-barber-pole {
-  animation: barber-pole-scroll 3s linear infinite;
+  animation: barber-pole-scroll 4s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
