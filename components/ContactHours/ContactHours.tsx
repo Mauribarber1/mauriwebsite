@@ -4,9 +4,9 @@ import type { Messages } from "@/lib/dictionaries";
 
 const MAPS_EMBED_SRC =
   "https://www.google.com/maps?q=Carrer+de+Bilbao+38,+08005+Barcelona&output=embed";
-const PHONE_DISPLAY = "664 30 16 64";
-const PHONE_HREF = "tel:+34664301664";
-const EMAIL = "mauribcn@gmail.com";
+const PHONE_DISPLAY = "664 30 16 65";
+const PHONE_HREF = "tel:+34664301665";
+const EMAIL = "mauriciubcn@gmail.com";
 const INSTAGRAM_HANDLE = "@maurilima71";
 const INSTAGRAM_URL = "https://www.instagram.com/maurilima71";
 

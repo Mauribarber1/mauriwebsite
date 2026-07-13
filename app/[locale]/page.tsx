@@ -62,8 +62,8 @@ function buildLocalBusinessJsonLd(locale: Locale) {
     name: "Mauri Barber",
     url: `${BASE_URL}/${locale}`,
     image: `${BASE_URL}/images/hero.jpg`,
-    telephone: "+34664301664",
-    email: "mauribcn@gmail.com",
+    telephone: "+34664301665",
+    email: "mauriciubcn@gmail.com",
     // TODO: placeholder tier, no real pricing from the client yet — update once known
     priceRange: "€€",
     address: {

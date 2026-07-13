@@ -35,8 +35,8 @@
       {
         "name": "Para ele",
         "items": [
-          { "name": "Tapers fade", "price": "15€*" },
-          { "name": "Corte masculino", "price": "12€*" },
+          { "name": "Tapers fade e degradês", "price": "15€*" },
+          { "name": "Corte normal masculino", "price": "12€*" },
           { "name": "Barba", "price": "10€*" },
           { "name": "Tintura, luzes e reflexos", "price": "A partir de 18€*" },
           { "name": "Corte infantil masculino (até 10 anos)", "price": "10€*" }
@@ -57,8 +57,8 @@
       "Corte feminino",
       "Vitaminas e hidratação",
       "Corte infantil feminino",
-      "Tapers fade",
-      "Corte masculino",
+      "Tapers fade e degradês",
+      "Corte normal masculino",
       "Barba",
       "Tintura, luzes e reflexos",
       "Corte infantil masculino"
@@ -67,8 +67,8 @@
   "historia": {
     "eyebrow": "Nossa história",
     "title": "Mauricio, barbeiro e estilista",
-    "paragraph": "Natural de São Paulo, Brasil, Mauricio tem mais de 30 anos de experiência como barbeiro e estilista, especializado em cortes masculinos e femininos. Ele combina técnicas clássicas e modernas para oferecer um atendimento personalizado, com um trato próximo e resultados de qualidade adaptados ao estilo de cada cliente.",
-    "statNumber": 30,
+    "paragraph": "Natural de São Paulo, Brasil, Mauricio tem mais de 20 anos de experiência como barbeiro e estilista, especializado em cortes masculinos e femininos. Ele combina técnicas clássicas e modernas para oferecer um atendimento personalizado, com um trato próximo e resultados de qualidade adaptados ao estilo de cada cliente.",
+    "statNumber": 20,
     "statLabel": "anos de experiência"
   },
   "reviews": {

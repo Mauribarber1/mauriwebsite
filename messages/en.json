@@ -35,8 +35,8 @@
       {
         "name": "For him",
         "items": [
-          { "name": "Tapers fade", "price": "€15*" },
-          { "name": "Men's haircut", "price": "€12*" },
+          { "name": "Tapers fade & fades", "price": "€15*" },
+          { "name": "Regular men's haircut", "price": "€12*" },
           { "name": "Beard", "price": "€10*" },
           { "name": "Dye, highlights & balayage", "price": "From €18*" },
           { "name": "Boys' haircut (up to age 10)", "price": "€10*" }
@@ -57,8 +57,8 @@
       "Women's haircut",
       "Vitamins & hydration",
       "Girls' haircut",
-      "Tapers fade",
-      "Men's haircut",
+      "Tapers fade & fades",
+      "Regular men's haircut",
       "Beard",
       "Dye, highlights & balayage",
       "Boys' haircut"
@@ -67,8 +67,8 @@
   "historia": {
     "eyebrow": "Our story",
     "title": "Mauricio, barber and stylist",
-    "paragraph": "Originally from São Paulo, Brazil, Mauricio has more than 30 years of experience as a barber and stylist, specializing in men's and women's haircuts. He combines classic and modern techniques to offer a personalized service, with close, friendly treatment and quality results tailored to each client's style.",
-    "statNumber": 30,
+    "paragraph": "Originally from São Paulo, Brazil, Mauricio has more than 20 years of experience as a barber and stylist, specializing in men's and women's haircuts. He combines classic and modern techniques to offer a personalized service, with close, friendly treatment and quality results tailored to each client's style.",
+    "statNumber": 20,
     "statLabel": "years of experience"
   },
   "reviews": {

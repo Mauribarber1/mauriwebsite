@@ -35,8 +35,8 @@
       {
         "name": "Para él",
         "items": [
-          { "name": "Tapers fade", "price": "15€*" },
-          { "name": "Corte hombre", "price": "12€*" },
+          { "name": "Tapers fade y degradados", "price": "15€*" },
+          { "name": "Corte normal hombre", "price": "12€*" },
           { "name": "Barba", "price": "10€*" },
           { "name": "Tinte, reflejos y mechas", "price": "Desde 18€*" },
           { "name": "Corte niños (hasta 10 años)", "price": "10€*" }
@@ -57,8 +57,8 @@
       "Corte mujer",
       "Vitaminas e hidratación",
       "Corte niñas",
-      "Tapers fade",
-      "Corte hombre",
+      "Tapers fade y degradados",
+      "Corte normal hombre",
       "Barba",
       "Tinte, reflejos y mechas",
       "Corte niños"
@@ -67,8 +67,8 @@
   "historia": {
     "eyebrow": "Nuestra historia",
     "title": "Mauricio, barbero y estilista",
-    "paragraph": "Originario de São Paulo, Brasil, Mauricio acumula más de 30 años de experiencia como barbero y estilista, especializado en cortes masculinos y femeninos. Combina técnicas clásicas y modernas para ofrecer un servicio personalizado, con un trato cercano y resultados de calidad adaptados al estilo de cada cliente.",
-    "statNumber": 30,
+    "paragraph": "Originario de São Paulo, Brasil, Mauricio acumula más de 20 años de experiencia como barbero y estilista, especializado en cortes masculinos y femeninos. Combina técnicas clásicas y modernas para ofrecer un servicio personalizado, con un trato cercano y resultados de calidad adaptados al estilo de cada cliente.",
+    "statNumber": 20,
     "statLabel": "años de experiencia"
   },
   "reviews": {

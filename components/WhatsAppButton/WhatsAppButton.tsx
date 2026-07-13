@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "34664301664";
+const WHATSAPP_NUMBER = "34664301665";
 
 export function buildWhatsAppLink(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
