@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "reviews": "Avaliações",
+    "contact": "Contato",
+    "whatsapp": "WhatsApp",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Barbearia em Barcelona",
+    "title": "Estilo clássico,",
+    "titleHighlight": "atitude moderna",
+    "description": "Na Mauri Barber cuidamos de cada detalhe do seu corte e da sua barba, no coração de Barcelona. Agende seu horário pelo WhatsApp e venha conferir.",
+    "ctaPrimary": "Agendar pelo WhatsApp",
+    "ctaSecondary": "Ver serviços"
+  },
+  "services": {
+    "eyebrow": "Serviços",
+    "title": "Tudo que o seu visual precisa",
+    "description": "Cortes, barba e barbear pensados para cada estilo.",
+    "priceNote": "* Preços de referência, sujeitos a confirmação com o barbeiro.",
+    "items": [
+      { "name": "Corte de cabelo", "description": "Corte na tesoura ou máquina, adaptado ao seu estilo.", "price": "18€*" },
+      { "name": "Corte + Barba", "description": "O combo completo: corte e acabamento de barba em um único horário.", "price": "28€*" },
+      { "name": "Acabamento de barba", "description": "Modelagem e desenho de barba com acabamento profissional.", "price": "12€*" },
+      { "name": "Barbear clássico", "description": "Barbear tradicional na navalha, com toalha quente.", "price": "20€*" },
+      { "name": "Corte infantil", "description": "Cortes para os pequenos da casa.", "price": "14€*" },
+      { "name": "Coloração", "description": "Cor e matização para cabelo e barba.", "price": "35€*" }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Galeria",
+    "title": "Nosso trabalho",
+    "description": "Alguns dos nossos trabalhos mais recentes."
+  },
+  "stripeBand": {
+    "items": ["FADES DE PRECISÃO", "BARBEAR CLÁSSICO", "DESIGN DE BARBA"]
+  },
+  "historia": {
+    "eyebrow": "Nossa história",
+    "title": "Mauricio, o barbeiro",
+    "paragraph": "Mauricio já passou mais de uma década atrás da cadeira, especializado em cortes clássicos e barbear tradicional na navalha. Ele abriu a Mauri Barber para oferecer um atendimento próximo e um ofício cuidado nos detalhes, sem pressa e sem exageros.",
+    "statNumber": 10,
+    "statLabel": "anos de ofício"
+  },
+  "reviews": {
+    "eyebrow": "Avaliações",
+    "title": "O que nossos clientes dizem",
+    "googleLabel": "Avaliações do Google",
+    "ratingLabel": "5.0 de 5",
+    "viewAllLabel": "Ver no Google Maps",
+    "items": [
+      { "name": "Ronaldo", "text": "I've been getting my hair cut by Mauricio since his previous barbershop, and I'm glad he didn't move far. He's an excellent barber with great attention to detail." },
+      { "name": "Augusto De Chico", "text": "Muy bueno. Increíble peluquero." },
+      { "name": "Henrique Nascimento", "text": "Mauricio é excelente" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Venha nos visitar",
+    "hoursTitle": "Horário",
+    "hours": [
+      { "days": "Segunda - Sexta", "hours": "10:00–14:30 e 15:30–20:00" },
+      { "days": "Sábado", "hours": "9:00–18:00" },
+      { "days": "Domingo", "hours": "Fechado" }
+    ],
+    "addressLabel": "Endereço",
+    "address": "Carrer de Bilbao 38, 08005 Barcelona",
+    "phoneLabel": "Telefone",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "ctaWhatsapp": "Fale conosco pelo WhatsApp"
+  },
+  "footer": {
+    "tagline": "Barbearia em Barcelona.",
+    "rights": "Todos os direitos reservados."
+  },
+  "whatsapp": {
+    "message": "Olá, gostaria de agendar um horário"
+  }
+}

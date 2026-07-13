@@ -12,10 +12,11 @@ type NavbarProps = {
   whatsappMessage: string;
 };
 
+const LOCALES_ORDER: Locale[] = ["es", "en", "pt"];
+const LOCALE_LABELS: Record<Locale, string> = { es: "ES", en: "EN", pt: "PT" };
+
 export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const otherLocale: Locale = locale === "es" ? "en" : "es";
-  const otherLabel = locale === "es" ? "EN" : "ES";
 
   const links = [
     { href: "#services", label: navbar.services },
@@ -42,12 +43,20 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <Link
-            href={`/${otherLocale}`}
-            className="hidden text-sm font-medium text-ink/60 transition-colors hover:text-gold-dark sm:inline"
-          >
-            {otherLabel}
-          </Link>
+          <div className="hidden items-center gap-2 text-sm font-medium sm:flex">
+            {LOCALES_ORDER.map((loc, index) => (
+              <span key={loc} className="flex items-center gap-2">
+                {index > 0 && <span className="text-ink/30">·</span>}
+                {loc === locale ? (
+                  <span className="text-gold-dark">{LOCALE_LABELS[loc]}</span>
+                ) : (
+                  <Link href={`/${loc}`} className="text-ink/60 transition-colors hover:text-gold-dark">
+                    {LOCALE_LABELS[loc]}
+                  </Link>
+                )}
+              </span>
+            ))}
+          </div>
           <WhatsAppButton message={whatsappMessage} label={navbar.whatsapp} />
           <button
             type="button"
@@ -78,13 +87,24 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
               {link.label}
             </a>
           ))}
-          <Link
-            href={`/${otherLocale}`}
-            onClick={() => setIsMenuOpen(false)}
-            className="rounded-lg px-3 py-2 text-sm font-medium text-ink/60 transition-colors hover:bg-gold-soft hover:text-gold-dark"
-          >
-            {otherLabel}
-          </Link>
+          <div className="flex items-center gap-2 px-3 py-2 text-sm font-medium">
+            {LOCALES_ORDER.map((loc, index) => (
+              <span key={loc} className="flex items-center gap-2">
+                {index > 0 && <span className="text-ink/30">·</span>}
+                {loc === locale ? (
+                  <span className="text-gold-dark">{LOCALE_LABELS[loc]}</span>
+                ) : (
+                  <Link
+                    href={`/${loc}`}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-ink/60 transition-colors hover:text-gold-dark"
+                  >
+                    {LOCALE_LABELS[loc]}
+                  </Link>
+                )}
+              </span>
+            ))}
+          </div>
         </nav>
       )}
     </header>

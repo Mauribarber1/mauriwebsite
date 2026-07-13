@@ -18,22 +18,37 @@ type Props = {
   params: Promise<{ locale: Locale }>;
 };
 
+const METADATA_BY_LOCALE: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Mauri Barber — Barbería en Barcelona",
+    description:
+      "Mauri Barber, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp.",
+  },
+  en: {
+    title: "Mauri Barber — Barbershop in Barcelona",
+    description:
+      "Mauri Barber, a barbershop in the Sant Martí neighborhood of Barcelona. Haircuts, beard grooming and classic shaves. Book on WhatsApp.",
+  },
+  pt: {
+    title: "Mauri Barber — Barbearia em Barcelona",
+    description:
+      "Mauri Barber, barbearia no bairro de Sant Martí, Barcelona. Cortes de cabelo, barba e barbear clássico. Agende pelo WhatsApp.",
+  },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const isEs = locale === "es";
+  const { title, description } = METADATA_BY_LOCALE[locale];
 
   return {
-    title: isEs
-      ? "Mauri Barber — Barbería en Barcelona"
-      : "Mauri Barber — Barbershop in Barcelona",
-    description: isEs
-      ? "Mauri Barber, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp."
-      : "Mauri Barber, a barbershop in the Sant Martí neighborhood of Barcelona. Haircuts, beard grooming and classic shaves. Book on WhatsApp.",
+    title,
+    description,
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: {
         es: `${BASE_URL}/es`,
         en: `${BASE_URL}/en`,
+        pt: `${BASE_URL}/pt`,
         "x-default": `${BASE_URL}/es`,
       },
     },
@@ -89,7 +104,7 @@ function buildLocalBusinessJsonLd(locale: Locale) {
 }
 
 export function generateStaticParams() {
-  return [{ locale: "es" }, { locale: "en" }];
+  return [{ locale: "es" }, { locale: "en" }, { locale: "pt" }];
 }
 
 export default async function LocaleHomePage({ params }: Props) {

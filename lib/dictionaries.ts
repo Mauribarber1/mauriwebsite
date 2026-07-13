@@ -5,6 +5,7 @@ import esMessages from "@/messages/es.json";
 const dictionaries = {
   es: () => import("@/messages/es.json").then((mod) => mod.default),
   en: () => import("@/messages/en.json").then((mod) => mod.default),
+  pt: () => import("@/messages/pt.json").then((mod) => mod.default),
 };
 
 export type Locale = keyof typeof dictionaries;
