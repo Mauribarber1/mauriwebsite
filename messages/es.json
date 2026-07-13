@@ -20,18 +20,28 @@
     "title": "Todo lo que tu look necesita",
     "description": "Cortes, barba y afeitados pensados para cada estilo.",
     "priceNote": "* Precios de referencia, sujetos a confirmación con el barbero.",
-    "items": [
-      { "name": "Mechas y reflejos", "description": "", "price": "Desde 35€*" },
-      { "name": "Tinte", "description": "", "price": "Desde 22€*" },
-      { "name": "Cejas", "description": "", "price": "4€*" },
-      { "name": "Corte mujer", "description": "", "price": "15€*" },
-      { "name": "Vitaminas e hidratación", "description": "", "price": "Consultar precio" },
-      { "name": "Corte niñas (hasta 10 años)", "description": "", "price": "12€*" },
-      { "name": "Tapers fade", "description": "", "price": "15€*" },
-      { "name": "Corte hombre", "description": "", "price": "12€*" },
-      { "name": "Barba", "description": "", "price": "10€*" },
-      { "name": "Tinte, reflejos y mechas", "description": "", "price": "Desde 18€*" },
-      { "name": "Corte niños (hasta 10 años)", "description": "", "price": "10€*" }
+    "groups": [
+      {
+        "name": "Para ella",
+        "items": [
+          { "name": "Mechas y reflejos", "price": "Desde 35€*" },
+          { "name": "Tinte", "price": "Desde 22€*" },
+          { "name": "Cejas", "price": "4€*" },
+          { "name": "Corte mujer", "price": "15€*" },
+          { "name": "Vitaminas e hidratación", "price": "Consultar precio" },
+          { "name": "Corte niñas (hasta 10 años)", "price": "12€*" }
+        ]
+      },
+      {
+        "name": "Para él",
+        "items": [
+          { "name": "Tapers fade", "price": "15€*" },
+          { "name": "Corte hombre", "price": "12€*" },
+          { "name": "Barba", "price": "10€*" },
+          { "name": "Tinte, reflejos y mechas", "price": "Desde 18€*" },
+          { "name": "Corte niños (hasta 10 años)", "price": "10€*" }
+        ]
+      }
     ]
   },
   "gallery": {

@@ -20,18 +20,28 @@
     "title": "Tudo que o seu visual precisa",
     "description": "Cortes, barba e barbear pensados para cada estilo.",
     "priceNote": "* Preços de referência, sujeitos a confirmação com o barbeiro.",
-    "items": [
-      { "name": "Luzes e reflexos", "description": "", "price": "A partir de 35€*" },
-      { "name": "Tintura", "description": "", "price": "A partir de 22€*" },
-      { "name": "Sobrancelhas", "description": "", "price": "4€*" },
-      { "name": "Corte feminino", "description": "", "price": "15€*" },
-      { "name": "Vitaminas e hidratação", "description": "", "price": "Consultar preço" },
-      { "name": "Corte infantil feminino (até 10 anos)", "description": "", "price": "12€*" },
-      { "name": "Tapers fade", "description": "", "price": "15€*" },
-      { "name": "Corte masculino", "description": "", "price": "12€*" },
-      { "name": "Barba", "description": "", "price": "10€*" },
-      { "name": "Tintura, luzes e reflexos", "description": "", "price": "A partir de 18€*" },
-      { "name": "Corte infantil masculino (até 10 anos)", "description": "", "price": "10€*" }
+    "groups": [
+      {
+        "name": "Para ela",
+        "items": [
+          { "name": "Luzes e reflexos", "price": "A partir de 35€*" },
+          { "name": "Tintura", "price": "A partir de 22€*" },
+          { "name": "Sobrancelhas", "price": "4€*" },
+          { "name": "Corte feminino", "price": "15€*" },
+          { "name": "Vitaminas e hidratação", "price": "Consultar preço" },
+          { "name": "Corte infantil feminino (até 10 anos)", "price": "12€*" }
+        ]
+      },
+      {
+        "name": "Para ele",
+        "items": [
+          { "name": "Tapers fade", "price": "15€*" },
+          { "name": "Corte masculino", "price": "12€*" },
+          { "name": "Barba", "price": "10€*" },
+          { "name": "Tintura, luzes e reflexos", "price": "A partir de 18€*" },
+          { "name": "Corte infantil masculino (até 10 anos)", "price": "10€*" }
+        ]
+      }
     ]
   },
   "gallery": {

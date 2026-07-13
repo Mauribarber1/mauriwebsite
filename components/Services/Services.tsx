@@ -17,28 +17,36 @@ export default function Services({ services }: ServicesProps) {
         </h2>
         <p className="mt-4 text-ink/70">{services.description}</p>
       </div>
-      <div className="mt-12 border-t border-black/10">
-        {services.items.map((item, index) => (
-          <Reveal key={item.name} delay={index * 0.06}>
-            <div className="group relative grid grid-cols-[2.5rem_1fr_auto] items-center gap-6 overflow-hidden border-b border-black/10 py-7 transition-colors duration-300 hover:bg-gold-soft">
-              <span
-                aria-hidden="true"
-                className="font-display pointer-events-none absolute -left-2 top-1/2 -z-10 -translate-y-1/2 text-8xl text-ink/5 transition-colors duration-300 group-hover:text-gold-dark sm:text-9xl"
-              >
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <span className="font-display text-sm text-gold-dark">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <div className="min-w-0">
-                <h3 className="font-display text-2xl">{item.name}</h3>
-                {item.description && <p className="mt-1 text-sm text-ink/60">{item.description}</p>}
-              </div>
-              <span className="font-display whitespace-nowrap text-2xl text-gold-dark">
-                {item.price}
-              </span>
+      <div className="mt-12 space-y-12">
+        {services.groups.map((group) => (
+          <div key={group.name}>
+            <h3 className="font-display mb-2 text-xl uppercase tracking-wide text-gold-dark">
+              {group.name}
+            </h3>
+            <div className="border-t border-black/10">
+              {group.items.map((item, index) => (
+                <Reveal key={item.name} delay={index * 0.06}>
+                  <div className="group relative grid grid-cols-[2.5rem_1fr_auto] items-center gap-6 overflow-hidden border-b border-black/10 py-7 transition-colors duration-300 hover:bg-gold-soft">
+                    <span
+                      aria-hidden="true"
+                      className="font-display pointer-events-none absolute -left-2 top-1/2 -z-10 -translate-y-1/2 text-8xl text-ink/5 transition-colors duration-300 group-hover:text-gold-dark sm:text-9xl"
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-display text-sm text-gold-dark">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <div className="min-w-0">
+                      <h4 className="font-display text-2xl">{item.name}</h4>
+                    </div>
+                    <span className="font-display whitespace-nowrap text-2xl text-gold-dark">
+                      {item.price}
+                    </span>
+                  </div>
+                </Reveal>
+              ))}
             </div>
-          </Reveal>
+          </div>
         ))}
       </div>
       <p className="mt-6 text-xs text-ink/50">{services.priceNote}</p>
