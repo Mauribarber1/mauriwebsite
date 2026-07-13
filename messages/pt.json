@@ -21,12 +21,17 @@
     "description": "Cortes, barba e barbear pensados para cada estilo.",
     "priceNote": "* Preços de referência, sujeitos a confirmação com o barbeiro.",
     "items": [
-      { "name": "Corte de cabelo", "description": "Corte na tesoura ou máquina, adaptado ao seu estilo.", "price": "18€*" },
-      { "name": "Corte + Barba", "description": "O combo completo: corte e acabamento de barba em um único horário.", "price": "28€*" },
-      { "name": "Acabamento de barba", "description": "Modelagem e desenho de barba com acabamento profissional.", "price": "12€*" },
-      { "name": "Barbear clássico", "description": "Barbear tradicional na navalha, com toalha quente.", "price": "20€*" },
-      { "name": "Corte infantil", "description": "Cortes para os pequenos da casa.", "price": "14€*" },
-      { "name": "Coloração", "description": "Cor e matização para cabelo e barba.", "price": "35€*" }
+      { "name": "Luzes e reflexos", "description": "", "price": "A partir de 35€*" },
+      { "name": "Tintura", "description": "", "price": "A partir de 22€*" },
+      { "name": "Sobrancelhas", "description": "", "price": "4€*" },
+      { "name": "Corte feminino", "description": "", "price": "15€*" },
+      { "name": "Vitaminas e hidratação", "description": "", "price": "Consultar preço" },
+      { "name": "Corte infantil feminino (até 10 anos)", "description": "", "price": "12€*" },
+      { "name": "Tapers fade", "description": "", "price": "15€*" },
+      { "name": "Corte masculino", "description": "", "price": "12€*" },
+      { "name": "Barba", "description": "", "price": "10€*" },
+      { "name": "Tintura, luzes e reflexos", "description": "", "price": "A partir de 18€*" },
+      { "name": "Corte infantil masculino (até 10 anos)", "description": "", "price": "10€*" }
     ]
   },
   "gallery": {
@@ -39,10 +44,10 @@
   },
   "historia": {
     "eyebrow": "Nossa história",
-    "title": "Mauricio, o barbeiro",
-    "paragraph": "Mauricio já passou mais de uma década atrás da cadeira, especializado em cortes clássicos e barbear tradicional na navalha. Ele abriu a Mauri Barber para oferecer um atendimento próximo e um ofício cuidado nos detalhes, sem pressa e sem exageros.",
-    "statNumber": 10,
-    "statLabel": "anos de ofício"
+    "title": "Mauricio, barbeiro e estilista",
+    "paragraph": "Natural de São Paulo, Brasil, Mauricio tem mais de 30 anos de experiência como barbeiro e estilista, especializado em cortes masculinos e femininos. Ele combina técnicas clássicas e modernas para oferecer um atendimento personalizado, com um trato próximo e resultados de qualidade adaptados ao estilo de cada cliente.",
+    "statNumber": 30,
+    "statLabel": "anos de experiência"
   },
   "reviews": {
     "eyebrow": "Avaliações",

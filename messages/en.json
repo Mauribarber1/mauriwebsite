@@ -21,12 +21,17 @@
     "description": "Haircuts, beard grooming and shaves for every style.",
     "priceNote": "* Reference prices, subject to confirmation with the barber.",
     "items": [
-      { "name": "Haircut", "description": "Scissor or clipper cut, tailored to your style.", "price": "€18*" },
-      { "name": "Haircut + Beard", "description": "The full combo: haircut and beard grooming in one visit.", "price": "€28*" },
-      { "name": "Beard grooming", "description": "Beard shaping and trimming with a professional finish.", "price": "€12*" },
-      { "name": "Classic shave", "description": "Traditional razor shave with hot towel.", "price": "€20*" },
-      { "name": "Kids haircut", "description": "Haircuts for the little ones.", "price": "€14*" },
-      { "name": "Coloring", "description": "Color and toning for hair and beard.", "price": "€35*" }
+      { "name": "Highlights", "description": "", "price": "From €35*" },
+      { "name": "Hair dye", "description": "", "price": "From €22*" },
+      { "name": "Eyebrows", "description": "", "price": "€4*" },
+      { "name": "Women's haircut", "description": "", "price": "€15*" },
+      { "name": "Vitamins & hydration", "description": "", "price": "Ask for pricing" },
+      { "name": "Girls' haircut (up to age 10)", "description": "", "price": "€12*" },
+      { "name": "Tapers fade", "description": "", "price": "€15*" },
+      { "name": "Men's haircut", "description": "", "price": "€12*" },
+      { "name": "Beard", "description": "", "price": "€10*" },
+      { "name": "Dye, highlights & balayage", "description": "", "price": "From €18*" },
+      { "name": "Boys' haircut (up to age 10)", "description": "", "price": "€10*" }
     ]
   },
   "gallery": {
@@ -39,10 +44,10 @@
   },
   "historia": {
     "eyebrow": "Our story",
-    "title": "Mauricio, the barber",
-    "paragraph": "Mauricio has spent over a decade behind the chair, specializing in classic cuts and traditional razor shaves. He opened Mauri Barber to offer close, unhurried service and a craft built on attention to detail.",
-    "statNumber": 10,
-    "statLabel": "years of craft"
+    "title": "Mauricio, barber and stylist",
+    "paragraph": "Originally from São Paulo, Brazil, Mauricio has more than 30 years of experience as a barber and stylist, specializing in men's and women's haircuts. He combines classic and modern techniques to offer a personalized service, with close, friendly treatment and quality results tailored to each client's style.",
+    "statNumber": 30,
+    "statLabel": "years of experience"
   },
   "reviews": {
     "eyebrow": "Reviews",

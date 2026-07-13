@@ -32,7 +32,7 @@ export default function Services({ services }: ServicesProps) {
               </span>
               <div className="min-w-0">
                 <h3 className="font-display text-2xl">{item.name}</h3>
-                <p className="mt-1 text-sm text-ink/60">{item.description}</p>
+                {item.description && <p className="mt-1 text-sm text-ink/60">{item.description}</p>}
               </div>
               <span className="font-display whitespace-nowrap text-2xl text-gold-dark">
                 {item.price}

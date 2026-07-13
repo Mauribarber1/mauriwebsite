@@ -21,12 +21,17 @@
     "description": "Cortes, barba y afeitados pensados para cada estilo.",
     "priceNote": "* Precios de referencia, sujetos a confirmación con el barbero.",
     "items": [
-      { "name": "Corte de pelo", "description": "Corte a tijera o máquina, adaptado a tu estilo.", "price": "18€*" },
-      { "name": "Corte + Barba", "description": "El combo completo: corte y arreglo de barba en una sola cita.", "price": "28€*" },
-      { "name": "Arreglo de barba", "description": "Perfilado y diseño de barba con acabado profesional.", "price": "12€*" },
-      { "name": "Afeitado clásico", "description": "Afeitado tradicional a navaja, con toalla caliente.", "price": "20€*" },
-      { "name": "Corte niño", "description": "Cortes para los más pequeños de la casa.", "price": "14€*" },
-      { "name": "Coloración", "description": "Color y matización para pelo y barba.", "price": "35€*" }
+      { "name": "Mechas y reflejos", "description": "", "price": "Desde 35€*" },
+      { "name": "Tinte", "description": "", "price": "Desde 22€*" },
+      { "name": "Cejas", "description": "", "price": "4€*" },
+      { "name": "Corte mujer", "description": "", "price": "15€*" },
+      { "name": "Vitaminas e hidratación", "description": "", "price": "Consultar precio" },
+      { "name": "Corte niñas (hasta 10 años)", "description": "", "price": "12€*" },
+      { "name": "Tapers fade", "description": "", "price": "15€*" },
+      { "name": "Corte hombre", "description": "", "price": "12€*" },
+      { "name": "Barba", "description": "", "price": "10€*" },
+      { "name": "Tinte, reflejos y mechas", "description": "", "price": "Desde 18€*" },
+      { "name": "Corte niños (hasta 10 años)", "description": "", "price": "10€*" }
     ]
   },
   "gallery": {
@@ -39,10 +44,10 @@
   },
   "historia": {
     "eyebrow": "Nuestra historia",
-    "title": "Mauricio, el barbero",
-    "paragraph": "Mauricio lleva más de una década detrás de la silla, especializado en cortes clásicos y afeitado a navaja. Abrió Mauri Barber para ofrecer un trato cercano y un oficio cuidado al detalle, sin prisas y sin florituras.",
-    "statNumber": 10,
-    "statLabel": "años de oficio"
+    "title": "Mauricio, barbero y estilista",
+    "paragraph": "Originario de São Paulo, Brasil, Mauricio acumula más de 30 años de experiencia como barbero y estilista, especializado en cortes masculinos y femeninos. Combina técnicas clásicas y modernas para ofrecer un servicio personalizado, con un trato cercano y resultados de calidad adaptados al estilo de cada cliente.",
+    "statNumber": 30,
+    "statLabel": "años de experiencia"
   },
   "reviews": {
     "eyebrow": "Reseñas",
