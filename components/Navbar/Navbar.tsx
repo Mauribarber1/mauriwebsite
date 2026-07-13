@@ -17,6 +17,7 @@ const LOCALE_LABELS: Record<Locale, string> = { es: "ES", en: "EN", pt: "PT" };
 
 export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   const links = [
     { href: "#services", label: navbar.services },
@@ -43,19 +44,37 @@ export default function Navbar({ locale, navbar, whatsappMessage }: NavbarProps)
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <div className="hidden items-center gap-2 text-sm font-medium sm:flex">
-            {LOCALES_ORDER.map((loc, index) => (
-              <span key={loc} className="flex items-center gap-2">
-                {index > 0 && <span className="text-ink/30">·</span>}
-                {loc === locale ? (
-                  <span className="text-gold-dark">{LOCALE_LABELS[loc]}</span>
-                ) : (
-                  <Link href={`/${loc}`} className="text-ink/60 transition-colors hover:text-gold-dark">
+          <div className="relative hidden sm:block">
+            <button
+              type="button"
+              onClick={() => setIsLangMenuOpen((open) => !open)}
+              aria-expanded={isLangMenuOpen}
+              aria-haspopup="true"
+              className="flex items-center gap-1 text-sm font-medium text-ink/60 transition-colors hover:text-gold-dark"
+            >
+              {LOCALE_LABELS[locale]}
+              <svg
+                viewBox="0 0 12 12"
+                className={`h-3 w-3 fill-none stroke-current stroke-1 transition-transform ${isLangMenuOpen ? "rotate-180" : ""}`}
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 4.5 6 8l3.5-3.5" />
+              </svg>
+            </button>
+            {isLangMenuOpen && (
+              <div className="absolute right-0 top-full z-10 mt-2 min-w-16 overflow-hidden rounded-lg border border-black/5 bg-paper shadow-lg">
+                {LOCALES_ORDER.filter((loc) => loc !== locale).map((loc) => (
+                  <Link
+                    key={loc}
+                    href={`/${loc}`}
+                    onClick={() => setIsLangMenuOpen(false)}
+                    className="block px-4 py-2 text-sm font-medium text-ink/70 transition-colors hover:bg-gold-soft hover:text-gold-dark"
+                  >
                     {LOCALE_LABELS[loc]}
                   </Link>
-                )}
-              </span>
-            ))}
+                ))}
+              </div>
+            )}
           </div>
           <WhatsAppButton message={whatsappMessage} label={navbar.whatsapp} />
           <button
