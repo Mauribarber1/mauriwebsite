@@ -50,7 +50,19 @@
     "description": "Alguns dos nossos trabalhos mais recentes."
   },
   "stripeBand": {
-    "items": ["FADES DE PRECISÃO", "BARBEAR CLÁSSICO", "DESIGN DE BARBA"]
+    "items": [
+      "Luzes e reflexos",
+      "Tintura",
+      "Sobrancelhas",
+      "Corte feminino",
+      "Vitaminas e hidratação",
+      "Corte infantil feminino",
+      "Tapers fade",
+      "Corte masculino",
+      "Barba",
+      "Tintura, luzes e reflexos",
+      "Corte infantil masculino"
+    ]
   },
   "historia": {
     "eyebrow": "Nossa história",

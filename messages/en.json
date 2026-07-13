@@ -50,7 +50,19 @@
     "description": "A look at some of our recent work."
   },
   "stripeBand": {
-    "items": ["PRECISION FADES", "CLASSIC SHAVES", "BEARD DESIGN"]
+    "items": [
+      "Highlights",
+      "Hair dye",
+      "Eyebrows",
+      "Women's haircut",
+      "Vitamins & hydration",
+      "Girls' haircut",
+      "Tapers fade",
+      "Men's haircut",
+      "Beard",
+      "Dye, highlights & balayage",
+      "Boys' haircut"
+    ]
   },
   "historia": {
     "eyebrow": "Our story",

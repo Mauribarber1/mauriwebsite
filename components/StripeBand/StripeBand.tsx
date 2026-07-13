@@ -4,7 +4,7 @@ type StripeBandProps = {
   stripeBand: Messages["stripeBand"];
 };
 
-const REPEAT_COUNT = 6;
+const REPEAT_COUNT = 2;
 
 export default function StripeBand({ stripeBand }: StripeBandProps) {
   const half = Array.from({ length: REPEAT_COUNT }, () => stripeBand.items).flat();
@@ -23,7 +23,7 @@ export default function StripeBand({ stripeBand }: StripeBandProps) {
         className="animate-stripe-scroll inline-flex whitespace-nowrap bg-ink py-1"
       >
         {loopItems.map((item, index) => (
-          <span key={`${item}-${index}`} className="font-display mx-4 text-sm tracking-wide text-paper">
+          <span key={`${item}-${index}`} className="font-display mx-4 text-sm uppercase tracking-wide text-paper">
             {item}
             <span className="mx-4 text-gold">·</span>
           </span>

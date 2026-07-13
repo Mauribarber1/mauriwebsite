@@ -50,7 +50,19 @@
     "description": "Algunas de nuestras últimas realizaciones."
   },
   "stripeBand": {
-    "items": ["FADES DE PRECISIÓN", "AFEITADO CLÁSICO", "DISEÑO DE BARBA"]
+    "items": [
+      "Mechas y reflejos",
+      "Tinte",
+      "Cejas",
+      "Corte mujer",
+      "Vitaminas e hidratación",
+      "Corte niñas",
+      "Tapers fade",
+      "Corte hombre",
+      "Barba",
+      "Tinte, reflejos y mechas",
+      "Corte niños"
+    ]
   },
   "historia": {
     "eyebrow": "Nuestra historia",
