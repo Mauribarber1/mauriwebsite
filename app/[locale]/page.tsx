@@ -12,7 +12,7 @@ import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
 import ScrollProgressBar from "@/components/motion/ScrollProgressBar";
 import { getDictionary, type Locale } from "@/lib/dictionaries";
 
-const BASE_URL = "https://www.mauribarber.com";
+const BASE_URL = "https://www.mauristudiobcn.es";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
