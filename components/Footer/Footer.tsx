@@ -32,7 +32,7 @@ export default function Footer({ footer, locale }: FooterProps) {
         </p>
         <p className="text-xs text-ink/40">
           <a
-            href="https://www.klentcreative.com"
+            href="https://www.klentcreative.com/es"
             target="_blank"
             rel="noopener noreferrer"
             className="underline transition-colors hover:text-gold-dark"
