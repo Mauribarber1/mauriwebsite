@@ -1,13 +1,13 @@
+import Image from "next/image";
+
 type LogoProps = {
   className?: string;
 };
 
 export default function Logo({ className = "" }: LogoProps) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <span className="font-display text-xl uppercase tracking-wide">
-        Mauri <span className="text-gold-dark">Barber</span>
-      </span>
+    <span className={`inline-flex items-center ${className}`}>
+      <Image src="/logo-noir.svg" alt="Mauri Studio" width={384} height={225} className="h-10 w-auto" priority />
     </span>
   );
 }
