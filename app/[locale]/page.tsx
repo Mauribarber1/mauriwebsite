@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import StripeBand from "@/components/StripeBand/StripeBand";
@@ -38,7 +39,14 @@ const METADATA_BY_LOCALE: Record<Locale, { title: string; description: string }>
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const { title, description } = METADATA_BY_LOCALE[locale];
+  const localeMetadata = METADATA_BY_LOCALE[locale];
+  // A non-locale request (e.g. the browser's automatic /favicon.ico probe) can still
+  // match this dynamic segment before the layout's own notFound() guard applies —
+  // guard again here rather than assuming locale is always one of LOCALES.
+  if (!localeMetadata) {
+    notFound();
+  }
+  const { title, description } = localeMetadata;
 
   return {
     title,
