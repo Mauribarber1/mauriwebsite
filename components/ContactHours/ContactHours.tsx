@@ -1,9 +1,8 @@
 import HoursList from "@/components/ContactHours/HoursList";
+import MapEmbed from "@/components/ContactHours/MapEmbed";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
 import type { Messages } from "@/lib/dictionaries";
 
-const MAPS_EMBED_SRC =
-  "https://www.google.com/maps?q=Carrer+de+Bilbao+38,+08005+Barcelona&output=embed";
 const PHONE_DISPLAY = "664 30 16 65";
 const PHONE_HREF = "tel:+34664301665";
 const EMAIL = "mauriciubcn@gmail.com";
@@ -13,9 +12,10 @@ const INSTAGRAM_URL = "https://www.instagram.com/maurilima71";
 type ContactHoursProps = {
   contact: Messages["contact"];
   whatsappMessage: string;
+  mapFallback: Messages["mapFallback"];
 };
 
-export default function ContactHours({ contact, whatsappMessage }: ContactHoursProps) {
+export default function ContactHours({ contact, whatsappMessage, mapFallback }: ContactHoursProps) {
   return (
     <section id="contact" className="bg-ink py-24 text-paper">
       <div className="mx-auto max-w-6xl px-6">
@@ -69,13 +69,7 @@ export default function ContactHours({ contact, whatsappMessage }: ContactHoursP
           </div>
 
           <div className="h-80 overflow-hidden rounded-2xl lg:h-full">
-            <iframe
-              src={MAPS_EMBED_SRC}
-              title="Mauri Barber — Google Maps"
-              className="h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <MapEmbed mapFallback={mapFallback} />
           </div>
         </div>
       </div>

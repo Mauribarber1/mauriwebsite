@@ -101,9 +101,118 @@
   },
   "footer": {
     "tagline": "Barbería en Barcelona.",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "legalNotice": "Aviso legal",
+    "privacy": "Privacidad",
+    "cookies": "Cookies"
   },
   "whatsapp": {
     "message": "Hola, quiero reservar una cita"
+  },
+  "cookieBanner": {
+    "message": "Usamos el mapa incrustado de Google Maps en la sección de contacto, que puede instalar sus propias cookies. Vercel Analytics, que también usamos, no utiliza cookies.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "more": "Más información"
+  },
+  "mapFallback": {
+    "message": "Has rechazado las cookies de Google Maps, así que no cargamos el mapa interactivo.",
+    "cta": "Ver ubicación en Google Maps"
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Aviso Legal",
+      "updated": "Última actualización: julio de 2026",
+      "sections": [
+        {
+          "heading": "1. Datos identificativos",
+          "body": "En cumplimiento del deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), se facilitan los siguientes datos: el titular de este sitio web es [NOMBRE COMPLETO / RAZÓN SOCIAL], con NIF/CIF [NIF/CIF], con domicilio en [DIRECCIÓN FISCAL], y correo electrónico de contacto mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "2. Objeto",
+          "body": "El presente aviso legal regula el uso del sitio web mauribarber.com (en adelante, «el sitio web»), del cual es titular Mauri Barber / Mauri Studio, cuya actividad es la prestación de servicios de barbería y peluquería."
+        },
+        {
+          "heading": "3. Condiciones de uso",
+          "body": "El acceso a este sitio web es gratuito y no requiere registro previo. El uso del sitio web implica la aceptación plena de las condiciones establecidas en este Aviso Legal."
+        },
+        {
+          "heading": "4. Propiedad intelectual",
+          "body": "Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño) son propiedad de [NOMBRE COMPLETO] o de terceros que han autorizado su uso, y están protegidos por la normativa de propiedad intelectual e industrial."
+        },
+        {
+          "heading": "5. Enlaces a terceros",
+          "body": "Este sitio web puede contener enlaces a servicios de terceros (WhatsApp, Instagram, Google Maps). El titular no se hace responsable del contenido ni de las políticas de privacidad de dichos servicios."
+        },
+        {
+          "heading": "6. Legislación aplicable",
+          "body": "Para toda cuestión litigiosa relacionada con este sitio web será de aplicación la legislación española, siendo competentes los juzgados y tribunales del domicilio del titular."
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Política de Privacidad",
+      "updated": "Última actualización: julio de 2026",
+      "sections": [
+        {
+          "heading": "1. Responsable del tratamiento",
+          "body": "[NOMBRE COMPLETO], NIF/CIF [NIF/CIF], con domicilio en [DIRECCIÓN FISCAL], correo electrónico mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "2. Datos que tratamos",
+          "body": "Este sitio web no dispone de formulario de contacto ni de registro de usuarios. Los únicos datos que podrían tratarse son: (a) datos de navegación anónimos y agregados a través de Vercel Analytics, sin uso de cookies ni identificación personal; (b) si nos escribes por WhatsApp, tu número de teléfono y el contenido del mensaje se gestionan directamente en la aplicación WhatsApp, conforme a la política de privacidad de Meta/WhatsApp."
+        },
+        {
+          "heading": "3. Finalidad",
+          "body": "Los datos de analítica se emplean únicamente para conocer el uso agregado del sitio web y mejorar la experiencia de navegación. No se elaboran perfiles ni se ceden datos a terceros con fines comerciales."
+        },
+        {
+          "heading": "4. Base legal",
+          "body": "Interés legítimo del responsable para el análisis estadístico del sitio web."
+        },
+        {
+          "heading": "5. Conservación",
+          "body": "Los datos analíticos agregados se conservan según la propia política de Vercel Analytics."
+        },
+        {
+          "heading": "6. Destinatarios",
+          "body": "No se ceden datos a terceros salvo obligación legal. El proveedor de mapas (Google Maps) y el de analítica (Vercel) son proveedores tecnológicos que actúan como encargados del tratamiento."
+        },
+        {
+          "heading": "7. Tus derechos",
+          "body": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "8. Reclamaciones",
+          "body": "Puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si consideras que tus derechos no han sido atendidos correctamente."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "updated": "Última actualización: julio de 2026",
+      "sections": [
+        {
+          "heading": "1. ¿Qué son las cookies?",
+          "body": "Las cookies son pequeños archivos que se almacenan en tu navegador al visitar un sitio web."
+        },
+        {
+          "heading": "2. Cookies que utilizamos",
+          "body": "Este sitio web no instala cookies propias. Si aceptas el mapa interactivo de Google Maps de la sección de contacto, Google puede instalar sus propias cookies conforme a su política de privacidad. Si rechazas o no aceptas, el mapa no se cargará y en su lugar se mostrará un enlace para abrir la ubicación directamente en Google Maps."
+        },
+        {
+          "heading": "3. Vercel Analytics",
+          "body": "Utilizamos Vercel Analytics para conocer el uso agregado del sitio. Este servicio no utiliza cookies ni almacena identificadores personales."
+        },
+        {
+          "heading": "4. Gestión de tu elección",
+          "body": "Puedes cambiar tu decisión en cualquier momento borrando los datos de navegación de tu navegador, lo que hará que el banner de cookies vuelva a aparecer."
+        },
+        {
+          "heading": "5. Más información",
+          "body": "Para más información sobre las cookies de Google, consulta la política de privacidad de Google en policies.google.com/privacy."
+        }
+      ]
+    }
   }
 }

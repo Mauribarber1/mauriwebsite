@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Bebas_Neue } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { CookieConsentProvider } from "@/components/CookieConsent/CookieConsentContext";
 import "./globals.css";
 
 const workSans = Work_Sans({
@@ -28,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${workSans.variable} ${bebasNeue.variable}`}>
-      <body>{children}</body>
+      <body>
+        <CookieConsentProvider>{children}</CookieConsentProvider>
+        <Analytics />
+      </body>
     </html>
   );
 }

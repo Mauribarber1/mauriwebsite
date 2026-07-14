@@ -127,9 +127,9 @@ export default async function LocaleHomePage({ params }: Props) {
         <Gallery gallery={dict.gallery} />
         <Historia historia={dict.historia} />
         <Reviews reviews={dict.reviews} />
-        <ContactHours contact={dict.contact} whatsappMessage={dict.whatsapp.message} />
+        <ContactHours contact={dict.contact} whatsappMessage={dict.whatsapp.message} mapFallback={dict.mapFallback} />
       </main>
-      <Footer footer={dict.footer} />
+      <Footer footer={dict.footer} locale={locale} />
       <WhatsAppButton message={dict.whatsapp.message} label={dict.navbar.whatsapp} variant="floating" />
     </>
   );

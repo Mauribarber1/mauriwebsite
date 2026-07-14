@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import { LOCALES, type Locale } from "@/lib/dictionaries";
+import CookieBanner from "@/components/CookieConsent/CookieBanner";
+import { getDictionary, LOCALES, type Locale } from "@/lib/dictionaries";
 
 type Props = {
   children: React.ReactNode;
@@ -13,5 +14,12 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  return <>{children}</>;
+  const dict = await getDictionary(locale as Locale);
+
+  return (
+    <>
+      {children}
+      <CookieBanner locale={locale as Locale} cookieBanner={dict.cookieBanner} />
+    </>
+  );
 }

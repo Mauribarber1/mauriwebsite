@@ -101,9 +101,118 @@
   },
   "footer": {
     "tagline": "Barbershop in Barcelona.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Cookies"
   },
   "whatsapp": {
     "message": "Hi, I'd like to book an appointment"
+  },
+  "cookieBanner": {
+    "message": "We use the Google Maps embed in the contact section, which may set its own cookies. Vercel Analytics, which we also use, does not use cookies.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "more": "Learn more"
+  },
+  "mapFallback": {
+    "message": "You declined Google Maps cookies, so we haven't loaded the interactive map.",
+    "cta": "View location on Google Maps"
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Legal Notice",
+      "updated": "Last updated: July 2026",
+      "sections": [
+        {
+          "heading": "1. Identification details",
+          "body": "In compliance with the information duty set out in Article 10 of Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSICE), the following details are provided: this website is owned by [FULL NAME / COMPANY NAME], Tax ID [NIF/CIF], registered address at [REGISTERED ADDRESS], contact email mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "2. Purpose",
+          "body": "This legal notice governs the use of the website mauribarber.com (\"the website\"), owned by Mauri Barber / Mauri Studio, whose activity is providing barbershop and hairdressing services."
+        },
+        {
+          "heading": "3. Terms of use",
+          "body": "Access to this website is free and does not require prior registration. Using the website implies full acceptance of the terms set out in this Legal Notice."
+        },
+        {
+          "heading": "4. Intellectual property",
+          "body": "All content on this website (text, images, logos, design) is the property of [FULL NAME] or of third parties who have authorized its use, and is protected by intellectual and industrial property law."
+        },
+        {
+          "heading": "5. Third-party links",
+          "body": "This website may contain links to third-party services (WhatsApp, Instagram, Google Maps). The owner is not responsible for the content or privacy policies of such services."
+        },
+        {
+          "heading": "6. Governing law",
+          "body": "Any dispute related to this website shall be governed by Spanish law, with jurisdiction lying with the courts of the owner's domicile."
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: July 2026",
+      "sections": [
+        {
+          "heading": "1. Data controller",
+          "body": "[FULL NAME], Tax ID [NIF/CIF], address at [REGISTERED ADDRESS], email mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "2. Data we process",
+          "body": "This website has no contact form or user registration. The only data that may be processed are: (a) anonymous, aggregated browsing data through Vercel Analytics, without cookies or personal identification; (b) if you message us on WhatsApp, your phone number and message content are handled directly within the WhatsApp app, under Meta/WhatsApp's own privacy policy."
+        },
+        {
+          "heading": "3. Purpose",
+          "body": "Analytics data is used solely to understand aggregate website usage and improve the browsing experience. No profiles are built and no data is shared with third parties for commercial purposes."
+        },
+        {
+          "heading": "4. Legal basis",
+          "body": "The controller's legitimate interest in the statistical analysis of the website."
+        },
+        {
+          "heading": "5. Retention",
+          "body": "Aggregated analytics data is retained according to Vercel Analytics' own policy."
+        },
+        {
+          "heading": "6. Recipients",
+          "body": "No data is shared with third parties except where legally required. The map provider (Google Maps) and the analytics provider (Vercel) are technology providers acting as data processors."
+        },
+        {
+          "heading": "7. Your rights",
+          "body": "You may exercise your rights of access, rectification, erasure, objection, restriction, and portability by writing to mauriciubcn@gmail.com."
+        },
+        {
+          "heading": "8. Complaints",
+          "body": "You may file a complaint with the Spanish Data Protection Agency (AEPD, www.aepd.es) if you believe your rights have not been properly addressed."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Last updated: July 2026",
+      "sections": [
+        {
+          "heading": "1. What are cookies?",
+          "body": "Cookies are small files stored in your browser when you visit a website."
+        },
+        {
+          "heading": "2. Cookies we use",
+          "body": "This website does not set any cookies of its own. If you accept the interactive Google Maps embed in the contact section, Google may set its own cookies under its own privacy policy. If you decline or don't accept, the map will not load and a link to open the location directly in Google Maps will be shown instead."
+        },
+        {
+          "heading": "3. Vercel Analytics",
+          "body": "We use Vercel Analytics to understand aggregate site usage. This service does not use cookies or store personal identifiers."
+        },
+        {
+          "heading": "4. Managing your choice",
+          "body": "You can change your choice at any time by clearing your browser's browsing data, which will make the cookie banner appear again."
+        },
+        {
+          "heading": "5. More information",
+          "body": "For more information about Google's cookies, see Google's privacy policy at policies.google.com/privacy."
+        }
+      ]
+    }
   }
 }

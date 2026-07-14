@@ -1,11 +1,13 @@
+import Link from "next/link";
 import Logo from "@/components/Logo/Logo";
-import type { Messages } from "@/lib/dictionaries";
+import type { Locale, Messages } from "@/lib/dictionaries";
 
 type FooterProps = {
   footer: Messages["footer"];
+  locale: Locale;
 };
 
-export default function Footer({ footer }: FooterProps) {
+export default function Footer({ footer, locale }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
@@ -15,6 +17,18 @@ export default function Footer({ footer }: FooterProps) {
         <p className="text-sm text-ink/60">{footer.tagline}</p>
         <p className="text-xs text-ink/40">
           © {year} Mauri Barber. {footer.rights}
+          {" · "}
+          <Link href={`/${locale}/aviso-legal`} className="underline transition-colors hover:text-gold-dark">
+            {footer.legalNotice}
+          </Link>
+          {" · "}
+          <Link href={`/${locale}/privacidad`} className="underline transition-colors hover:text-gold-dark">
+            {footer.privacy}
+          </Link>
+          {" · "}
+          <Link href={`/${locale}/cookies`} className="underline transition-colors hover:text-gold-dark">
+            {footer.cookies}
+          </Link>
         </p>
       </div>
     </footer>
