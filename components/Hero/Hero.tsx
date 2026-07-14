@@ -11,7 +11,7 @@ type HeroProps = {
 export default function Hero({ hero, whatsappMessage }: HeroProps) {
   return (
     <section className="relative flex min-h-[85vh] items-center overflow-hidden">
-      <ParallaxImage src="/images/hero.jpg" alt="" sizes="100vw" priority strength={30} />
+      <ParallaxImage src="/images/image-hero.jpeg" alt="" sizes="100vw" priority strength={30} />
       <div className="absolute inset-0 bg-ink/70" />
       <div className="relative mx-auto max-w-6xl px-6 py-24 text-paper">
         <Reveal>
