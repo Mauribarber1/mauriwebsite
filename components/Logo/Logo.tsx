@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type LogoProps = {
   className?: string;
 };
@@ -7,7 +5,8 @@ type LogoProps = {
 export default function Logo({ className = "" }: LogoProps) {
   return (
     <span className={`inline-flex items-center ${className}`}>
-      <Image src="/logo-noir.svg" alt="Mauri Studio" width={384} height={225} className="h-14 w-auto" priority />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/logo-noir.svg" alt="Mauri Studio" className="h-20 w-auto" />
     </span>
   );
 }
