@@ -41,7 +41,7 @@ export default function Gallery({ gallery }: GalleryProps) {
                   alt=""
                   fill
                   sizes="(min-width: 768px) 33vw, 50vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className={`object-cover transition-transform duration-300 group-hover:scale-105 ${index >= 2 ? "grayscale" : ""}`}
                 />
               </div>
             </Reveal>
