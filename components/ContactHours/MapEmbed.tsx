@@ -18,7 +18,7 @@ export default function MapEmbed({ mapFallback }: MapEmbedProps) {
     return (
       <iframe
         src={MAPS_EMBED_SRC}
-        title="Mauri Barber — Google Maps"
+        title="Mauri Studio — Google Maps"
         className="h-full w-full border-0"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

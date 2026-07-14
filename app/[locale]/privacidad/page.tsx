@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(locale);
 
   return {
-    title: `Mauri Barber — ${dict.legalPages.privacidad.title}`,
+    title: `Mauri Studio — ${dict.legalPages.privacidad.title}`,
   };
 }
 

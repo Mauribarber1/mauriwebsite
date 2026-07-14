@@ -16,7 +16,7 @@ export default function Footer({ footer, locale }: FooterProps) {
         <Logo />
         <p className="text-sm text-ink/60">{footer.tagline}</p>
         <p className="text-xs text-ink/40">
-          © {year} Mauri Barber. {footer.rights}
+          © {year} Mauri Studio. {footer.rights}
           {" · "}
           <Link href={`/${locale}/aviso-legal`} className="underline transition-colors hover:text-gold-dark">
             {footer.legalNotice}

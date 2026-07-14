@@ -18,9 +18,9 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Mauri Barber — Barbería en Barcelona",
+  title: "Mauri Studio — Barbería en Barcelona",
   description:
-    "Mauri Barber, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp.",
+    "Mauri Studio, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp.",
 };
 
 export default function RootLayout({

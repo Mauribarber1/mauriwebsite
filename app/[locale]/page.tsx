@@ -20,19 +20,19 @@ type Props = {
 
 const METADATA_BY_LOCALE: Record<Locale, { title: string; description: string }> = {
   es: {
-    title: "Mauri Barber — Barbería en Barcelona",
+    title: "Mauri Studio — Barbería en Barcelona",
     description:
-      "Mauri Barber, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp.",
+      "Mauri Studio, barbería en el barrio de Sant Martí, Barcelona. Cortes de pelo, barba y afeitado clásico. Reserva por WhatsApp.",
   },
   en: {
-    title: "Mauri Barber — Barbershop in Barcelona",
+    title: "Mauri Studio — Barbershop in Barcelona",
     description:
-      "Mauri Barber, a barbershop in the Sant Martí neighborhood of Barcelona. Haircuts, beard grooming and classic shaves. Book on WhatsApp.",
+      "Mauri Studio, a barbershop in the Sant Martí neighborhood of Barcelona. Haircuts, beard grooming and classic shaves. Book on WhatsApp.",
   },
   pt: {
-    title: "Mauri Barber — Barbearia em Barcelona",
+    title: "Mauri Studio — Barbearia em Barcelona",
     description:
-      "Mauri Barber, barbearia no bairro de Sant Martí, Barcelona. Cortes de cabelo, barba e barbear clássico. Agende pelo WhatsApp.",
+      "Mauri Studio, barbearia no bairro de Sant Martí, Barcelona. Cortes de cabelo, barba e barbear clássico. Agende pelo WhatsApp.",
   },
 };
 
@@ -59,7 +59,7 @@ function buildLocalBusinessJsonLd(locale: Locale) {
   return {
     "@context": "https://schema.org",
     "@type": "HairSalon",
-    name: "Mauri Barber",
+    name: "Mauri Studio",
     url: `${BASE_URL}/${locale}`,
     image: `${BASE_URL}/images/image-hero.jpeg`,
     telephone: "+34664301665",
