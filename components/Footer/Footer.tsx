@@ -30,6 +30,16 @@ export default function Footer({ footer, locale }: FooterProps) {
             {footer.cookies}
           </Link>
         </p>
+        <p className="text-xs text-ink/40">
+          <a
+            href="https://www.klentcreative.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline transition-colors hover:text-gold-dark"
+          >
+            {footer.credit}
+          </a>
+        </p>
       </div>
     </footer>
   );
